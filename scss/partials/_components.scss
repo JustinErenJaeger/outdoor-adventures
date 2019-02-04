@@ -1,0 +1,109 @@
+.arrow {
+    width: 6rem;
+    height: 6rem;
+}
+
+.navbar {
+    width: 50%;
+    padding: 0.5rem;
+    padding-right: 2rem;
+    background: rgba(0, 0, 0, 0.6);
+    transform: skew(-45deg);
+}
+
+.navbar ul {
+   list-style: none;
+   display: grid;
+   grid-template-columns: repeat(4,1fr);
+   transform: skew(45deg);
+}
+
+.navbar a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.65);
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    padding: 1.5rem;
+    text-align: left;
+    font-family: 'Poiret One', cursive;
+}
+
+.navbar a:hover {
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 60px rgb(255, 255, 255),
+                -2px -2px 60px rgb(255, 255, 255);
+}
+  
+.dropdown {
+    overflow: hidden;
+}
+
+.dropdown a i {
+    padding-left: 0.2rem;
+    color: rgb(255, 255, 255);
+}
+  
+.dropdown .dropbtn {
+    font-size: 16px; 
+    border: none;
+    outline: none;
+    color: white;
+    background-color: inherit;
+    font-family: inherit; 
+    margin: 0; 
+}
+  
+.dropdown-content {
+    padding-top: 1.5rem;
+    display: none;
+    position: absolute;
+    width: 10rem;
+    height: 0;
+}
+
+.dropdown-content a {
+    display: block;
+    border-bottom: 0.3px solid rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.8);
+    color: rgb(255, 255, 255);
+}
+
+.dropdown-content a:hover {
+    display: block;
+    border-bottom: 0.3px solid rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+// Activities
+
+.image-1 {
+    width: 100%;
+    height: 24rem;
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/lions-head.jpg);
+    background-size: 100% 100%;
+}
+
+.image-1 p {
+    padding-top: 12rem;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.image-2 {
+    width: 100%;
+    height: 24rem;
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/plattekli-gorge.jpg);
+    background-size: 100% 100%;
+}
+
+.image-2 p {
+    padding-top: 12rem;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}

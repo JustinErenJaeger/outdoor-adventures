@@ -1,0 +1,169 @@
+.arrow {
+  width: 6rem;
+  height: 6rem; }
+
+.navbar {
+  width: 50%;
+  padding: 0.5rem;
+  padding-right: 2rem;
+  background: rgba(0, 0, 0, 0.6);
+  transform: skew(-45deg); }
+
+.navbar ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  transform: skew(45deg); }
+
+.navbar a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.65);
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  padding: 1.5rem;
+  text-align: left;
+  font-family: 'Poiret One', cursive; }
+
+.navbar a:hover {
+  color: white;
+  text-shadow: 2px 2px 60px white, -2px -2px 60px white; }
+
+.dropdown {
+  overflow: hidden; }
+
+.dropdown a i {
+  padding-left: 0.2rem;
+  color: white; }
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0; }
+
+.dropdown-content {
+  padding-top: 1.5rem;
+  display: none;
+  position: absolute;
+  width: 10rem;
+  height: 0; }
+
+.dropdown-content a {
+  display: block;
+  border-bottom: 0.3px solid black;
+  background: rgba(0, 0, 0, 0.8);
+  color: white; }
+
+.dropdown-content a:hover {
+  display: block;
+  border-bottom: 0.3px solid black;
+  background: white;
+  color: black;
+  font-weight: bolder; }
+
+.dropdown:hover .dropdown-content {
+  display: block; }
+
+.image-1 {
+  width: 100%;
+  height: 24rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/lions-head.jpg);
+  background-size: 100% 100%; }
+
+.image-1 p {
+  padding-top: 12rem;
+  text-align: center;
+  color: white; }
+
+.image-2 {
+  width: 100%;
+  height: 24rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/plattekli-gorge.jpg);
+  background-size: 100% 100%; }
+
+.image-2 p {
+  padding-top: 12rem;
+  text-align: center;
+  color: white; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+.main-header {
+  background: linear-gradient(-45deg, rgba(0, 0, 0, 0.9) 50%, rgba(0, 0, 0, 0.8) 50%), url(../images/camping.jpeg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  color: white; }
+
+.heading {
+  text-align: center;
+  padding-top: 10rem;
+  font-size: 2rem;
+  letter-spacing: 0.2rem; }
+
+.main-title {
+  padding: 0 1rem 1rem 1rem;
+  border-bottom: 2px solid white; }
+
+.main-heading {
+  font-family: 'Poiret One', cursive;
+  text-shadow: 5px 10px 3px black, 0 0 5px rgba(255, 255, 255, 0.2); }
+
+.aside {
+  padding: 2rem;
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "intro intro" "hiking hiking" "box-1 box-2"; }
+
+.intro {
+  grid-area: intro;
+  margin: 10rem 2rem 10rem 2rem;
+  padding: 0 2rem;
+  font-family: 'Poiret One', cursive;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  color: #555555;
+  text-align: center;
+  letter-spacing: 0.05rem;
+  line-height: 2rem;
+  border-left: 2px solid #555555;
+  border-right: 2px solid #555555; }
+
+.hiking {
+  grid-area: hiking;
+  font-family: 'Poiret One', cursive;
+  font-size: 5rem;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 0.2rem; }
+
+.box-1 {
+  grid-area: box-1;
+  color: #555555;
+  font-family: 'Poiret One', cursive;
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 0.05rem;
+  line-height: 1.6rem; }
+
+.box-2 {
+  grid-area: box-2;
+  color: #555555;
+  font-family: 'Poiret One', cursive;
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 0.05rem;
+  line-height: 1.6rem; }
+
+.box-2 img {
+  width: 30rem;
+  height: auto; }
+
+/*# sourceMappingURL=main.css.map */

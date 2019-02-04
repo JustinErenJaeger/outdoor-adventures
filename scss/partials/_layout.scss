@@ -1,0 +1,59 @@
+.aside {
+    padding: 2rem;
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "intro intro"
+    "hiking hiking"
+    "box-1 box-2";
+}
+
+.intro {
+    grid-area: intro;
+    margin: 10rem 2rem 10rem 2rem;
+    padding: 0 2rem;
+    font-family: 'Poiret One', cursive;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    color: rgb(85, 85, 85);
+    text-align: center;
+    letter-spacing: 0.05rem;
+    line-height: 2rem;
+    border-left: 2px solid rgb(85, 85, 85);
+    border-right: 2px solid rgb(85, 85, 85);
+}
+
+.hiking {
+    grid-area: hiking;
+    font-family: 'Poiret One', cursive;
+    font-size: 5rem;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+}
+
+.box-1 {
+    grid-area: box-1;
+    color: rgb(85, 85, 85);
+    font-family: 'Poiret One', cursive;
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 0.05rem;
+    line-height: 1.6rem;
+}
+
+.box-2 {
+    grid-area: box-2; 
+    color: rgb(85, 85, 85);
+    font-family: 'Poiret One', cursive;
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 0.05rem;
+    line-height: 1.6rem;
+}
+
+.box-2 img {
+    width: 30rem;
+    height: auto;
+}
