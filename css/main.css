@@ -1,7 +1,15 @@
 .arrow {
   width: 6rem;
-  height: 6rem; }
+  height: 6rem;
+  animation: move 2s linear infinite; }
 
+@keyframes move {
+  0% {
+    margin-top: 4rem; }
+  50% {
+    margin-top: 0; }
+  100% {
+    margin-top: 4rem; } }
 .navbar {
   width: 50%;
   padding: 0.5rem;
@@ -30,64 +38,146 @@
 
 .dropdown {
   overflow: hidden; }
-
-.dropdown a i {
-  padding-left: 0.2rem;
-  color: white; }
-
-.dropdown .dropbtn {
-  font-size: 16px;
-  border: none;
-  outline: none;
-  color: white;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0; }
-
-.dropdown-content {
-  padding-top: 1.5rem;
-  display: none;
-  position: absolute;
-  width: 10rem;
-  height: 0; }
-
-.dropdown-content a {
-  display: block;
-  border-bottom: 0.3px solid black;
-  background: rgba(0, 0, 0, 0.8);
-  color: white; }
-
-.dropdown-content a:hover {
-  display: block;
-  border-bottom: 0.3px solid black;
-  background: white;
-  color: black;
-  font-weight: bolder; }
+  .dropdown i {
+    padding-left: 0.2rem;
+    color: white; }
+  .dropdown .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0; }
+  .dropdown .dropdown-content {
+    padding-top: 1.5rem;
+    display: none;
+    position: absolute;
+    width: 10rem;
+    height: 0; }
+  .dropdown .dropdown-content a {
+    display: block;
+    border-bottom: 0.3px solid black;
+    background: rgba(0, 0, 0, 0.8);
+    color: white; }
+  .dropdown .dropdown-content a:hover {
+    display: block;
+    border-bottom: 0.3px solid black;
+    background: white;
+    color: black;
+    font-weight: bolder; }
 
 .dropdown:hover .dropdown-content {
   display: block; }
 
-.image-1 {
-  width: 100%;
-  height: 24rem;
+.act-1 {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/lions-head.jpg);
-  background-size: 100% 100%; }
-
-.image-1 p {
-  padding-top: 12rem;
-  text-align: center;
-  color: white; }
-
-.image-2 {
   width: 100%;
   height: 24rem;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/plattekli-gorge.jpg);
   background-size: 100% 100%; }
 
-.image-2 p {
+.act-2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/plattekli-gorge.jpg);
+  width: 100%;
+  height: 24rem;
+  background-size: 100% 100%; }
+
+.act-3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../images/climbing4.jpg);
+  width: 100%;
+  height: 24rem;
+  background-size: 100% 100%; }
+
+.act-4 {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../images/climbing5.jpg);
+  width: 100%;
+  height: 24rem;
+  background-size: 100% 100%; }
+
+.act-5 {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../images/canoe4.jpg);
+  width: 100%;
+  height: 24rem;
+  background-size: 100% 100%; }
+
+.act-6 {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../images/canoe5.jpg);
+  width: 100%;
+  height: 24rem;
+  background-size: 100% 100%; }
+
+.slide {
   padding-top: 12rem;
   text-align: center;
-  color: white; }
+  color: white;
+  opacity: 1;
+  transition: opacity 0.5s ease-out, margin-left 0.5s ease-out; }
+
+.box-1:hover .act-1 {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../images/lions-head.jpg);
+  width: 100%;
+  height: 24rem;
+  background-size: 100% 100%; }
+
+.box-2:hover .act-2 {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../images/plattekli-gorge.jpg);
+  width: 100%;
+  height: 24rem;
+  background-size: 100% 100%; }
+
+.box-3:hover .act-3 {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../images/climbing4.jpg);
+  width: 100%;
+  height: 24rem;
+  background-size: 100% 100%; }
+
+.box-4:hover .act-4 {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../images/climbing5.jpg);
+  width: 100%;
+  height: 24rem;
+  background-size: 100% 100%; }
+
+.box-5:hover .act-5 {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../images/canoe4.jpg);
+  width: 100%;
+  height: 24rem;
+  background-size: 100% 100%; }
+
+.box-6:hover .act-6 {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../images/canoe5.jpg);
+  width: 100%;
+  height: 24rem;
+  background-size: 100% 100%; }
+
+.box-1:hover .slide {
+  margin-left: 20rem;
+  opacity: 0;
+  transition: opacity 0.5s ease-out, margin-left 1s ease-out; }
+
+.box-2:hover .slide {
+  margin-left: 20rem;
+  opacity: 0;
+  transition: opacity 0.5s ease-out, margin-left 1s ease-out; }
+
+.box-3:hover .slide {
+  margin-left: 20rem;
+  opacity: 0;
+  transition: opacity 0.5s ease-out, margin-left 1s ease-out; }
+
+.box-4:hover .slide {
+  margin-left: 20rem;
+  opacity: 0;
+  transition: opacity 0.5s ease-out, margin-left 1s ease-out; }
+
+.box-5:hover .slide {
+  margin-left: 20rem;
+  opacity: 0;
+  transition: opacity 0.5s ease-out, margin-left 1s ease-out; }
+
+.box-6:hover .slide {
+  margin-left: 20rem;
+  opacity: 0;
+  transition: opacity 0.5s ease-out, margin-left 1s ease-out; }
 
 body {
   margin: 0;
@@ -115,8 +205,10 @@ body {
   font-family: 'Poiret One', cursive;
   text-shadow: 5px 10px 3px black, 0 0 5px rgba(255, 255, 255, 0.2); }
 
-.aside {
+.hiking {
+  border-bottom: 2px solid #555555;
   padding: 2rem;
+  margin: 2rem;
   display: grid;
   grid-gap: 2rem;
   grid-template-columns: repeat(2, 1fr);
@@ -136,13 +228,14 @@ body {
   border-left: 2px solid #555555;
   border-right: 2px solid #555555; }
 
-.hiking {
-  grid-area: hiking;
+.heading-1 {
+  color: #555555;
   font-family: 'Poiret One', cursive;
   font-size: 5rem;
   text-align: center;
   font-weight: bold;
-  letter-spacing: 0.2rem; }
+  letter-spacing: 0.2rem;
+  grid-area: hiking; }
 
 .box-1 {
   grid-area: box-1;
@@ -162,8 +255,74 @@ body {
   letter-spacing: 0.05rem;
   line-height: 1.6rem; }
 
-.box-2 img {
-  width: 30rem;
-  height: auto; }
+.climbing {
+  border-bottom: 2px solid #555555;
+  margin: 2rem;
+  padding: 2rem;
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "clmb clmb" "box-3 box-4"; }
+
+.heading-2 {
+  grid-area: clmb;
+  color: #555555;
+  font-family: 'Poiret One', cursive;
+  font-size: 5rem;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 0.2rem; }
+
+.box-3 {
+  grid-area: box-3;
+  color: #555555;
+  font-family: 'Poiret One', cursive;
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 0.05rem;
+  line-height: 1.6rem; }
+
+.box-4 {
+  grid-area: box-4;
+  color: #555555;
+  font-family: 'Poiret One', cursive;
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 0.05rem;
+  line-height: 1.6rem; }
+
+.canoe {
+  padding: 2rem;
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "clmb clmb" "box-3 box-4"; }
+
+.heading-3 {
+  grid-area: clmb;
+  color: #555555;
+  font-family: 'Poiret One', cursive;
+  font-size: 5rem;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 0.2rem; }
+
+.box-5 {
+  grid-area: box-3;
+  color: #555555;
+  font-family: 'Poiret One', cursive;
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 0.05rem;
+  line-height: 1.6rem; }
+
+.box-6 {
+  grid-area: box-4;
+  color: #555555;
+  font-family: 'Poiret One', cursive;
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 0.05rem;
+  line-height: 1.6rem; }
 
 /*# sourceMappingURL=main.css.map */

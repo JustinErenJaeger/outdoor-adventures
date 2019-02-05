@@ -1,6 +1,13 @@
 .arrow {
     width: 6rem;
     height: 6rem;
+    animation: move 2s linear infinite;
+}
+
+@keyframes move {
+    0% {margin-top: 4rem;}
+    50%{margin-top: 0;}
+    100%{margin-top: 4rem;}
 }
 
 .navbar {
@@ -36,74 +43,156 @@
   
 .dropdown {
     overflow: hidden;
-}
 
-.dropdown a i {
-    padding-left: 0.2rem;
-    color: rgb(255, 255, 255);
-}
-  
-.dropdown .dropbtn {
-    font-size: 16px; 
-    border: none;
-    outline: none;
-    color: white;
-    background-color: inherit;
-    font-family: inherit; 
-    margin: 0; 
-}
-  
-.dropdown-content {
-    padding-top: 1.5rem;
-    display: none;
-    position: absolute;
-    width: 10rem;
-    height: 0;
-}
+    i {
+        padding-left: 0.2rem;
+        color: rgb(255, 255, 255);
+    }
 
-.dropdown-content a {
-    display: block;
-    border-bottom: 0.3px solid rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.8);
-    color: rgb(255, 255, 255);
-}
+    .dropdown .dropbtn {
+        font-size: 16px; 
+        border: none;
+        outline: none;
+        color: white;
+        background-color: inherit;
+        font-family: inherit; 
+        margin: 0; 
+    }
+      
+    .dropdown-content {
+        padding-top: 1.5rem;
+        display: none;
+        position: absolute;
+        width: 10rem;
+        height: 0;
+    }
+    
+    .dropdown-content a {
+        display: block;
+        border-bottom: 0.3px solid rgb(0, 0, 0);
+        background: rgba(0, 0, 0, 0.8);
+        color: rgb(255, 255, 255);
+    }
 
-.dropdown-content a:hover {
-    display: block;
-    border-bottom: 0.3px solid rgb(0, 0, 0);
-    background: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-    font-weight: bolder;
+    .dropdown-content a:hover {
+        display: block;
+        border-bottom: 0.3px solid rgb(0, 0, 0);
+        background: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        font-weight: bolder;
+    }
+    
 }
   
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
-// Activities
 
-.image-1 {
-    width: 100%;
-    height: 24rem;
+// ACTIVITIES AND THERE BACKGROUNDS
+.act-1 {
     background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/lions-head.jpg);
-    background-size: 100% 100%;
+    @include imagebox;
 }
 
-.image-1 p {
-    padding-top: 12rem;
-    text-align: center;
-    color: rgb(255, 255, 255);
-}
-
-.image-2 {
-    width: 100%;
-    height: 24rem;
+.act-2 {
     background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/plattekli-gorge.jpg);
-    background-size: 100% 100%;
+    @include imagebox;  
 }
 
-.image-2 p {
+.act-3 {
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../images/climbing4.jpg);
+    @include imagebox;
+}
+
+.act-4 {
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../images/climbing5.jpg);
+    @include imagebox;
+}
+
+.act-5 {
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../images/canoe4.jpg);
+    @include imagebox;
+}
+
+.act-6 {
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../images/canoe5.jpg);
+    @include imagebox;
+}
+
+
+
+// THIS IS THE STYLES FOR THE TEXT ON THE IMAGES
+
+.slide {
     padding-top: 12rem;
     text-align: center;
     color: rgb(255, 255, 255);
+    opacity: 1;
+    transition: opacity 0.5s ease-out, margin-left 0.5s ease-out;
 }
+
+
+
+// IMAGE FULL OPACITY EFFECT FOR EACH ACTIVITY
+.box-1:hover .act-1 {
+    background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../images/lions-head.jpg);
+    @include imagebox;
+}
+
+.box-2:hover .act-2 {
+    background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../images/plattekli-gorge.jpg);
+    @include imagebox;
+}
+
+.box-3:hover .act-3 {
+    background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../images/climbing4.jpg);
+    @include imagebox;
+}
+
+.box-4:hover .act-4 {
+    background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../images/climbing5.jpg);
+    @include imagebox;
+}
+
+.box-5:hover .act-5 {
+    background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../images/canoe4.jpg);
+    @include imagebox;
+}
+
+.box-6:hover .act-6 {
+    background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../images/canoe5.jpg);
+    @include imagebox;
+}
+
+
+// SLIDE IN ANIMATION FOR THE TITLES OF EACH ACTIVITIES
+
+.box-1:hover .slide {
+    @include act-name-slider;
+}
+
+.box-2:hover .slide {
+    @include act-name-slider;
+}
+
+.box-3:hover .slide {
+    @include act-name-slider;
+}
+
+.box-4:hover .slide {
+    @include act-name-slider;
+}
+
+.box-5:hover .slide {
+    @include act-name-slider;
+}
+
+.box-6:hover .slide {
+    @include act-name-slider;
+}
+
+
+
+
+

@@ -1,5 +1,7 @@
-.aside {
+.hiking {
+    border-bottom: 2px solid rgb(85, 85, 85);
     padding: 2rem;
+    margin: 2rem;
     display: grid;
     grid-gap: 2rem;
     grid-template-columns: repeat(2, 1fr);
@@ -8,6 +10,8 @@
     "hiking hiking"
     "box-1 box-2";
 }
+
+// INTRO TO THE WEBSITE
 
 .intro {
     grid-area: intro;
@@ -24,36 +28,80 @@
     border-right: 2px solid rgb(85, 85, 85);
 }
 
-.hiking {
+// STYLES FOR THE HIKING SECTION
+.heading-1 {
+    @include headings;
     grid-area: hiking;
-    font-family: 'Poiret One', cursive;
-    font-size: 5rem;
-    text-align: center;
-    font-weight: bold;
-    letter-spacing: 0.2rem;
 }
 
 .box-1 {
     grid-area: box-1;
-    color: rgb(85, 85, 85);
-    font-family: 'Poiret One', cursive;
-    font-size: 1.2rem;
-    font-weight: bold;
-    letter-spacing: 0.05rem;
-    line-height: 1.6rem;
+    @include section;
 }
 
 .box-2 {
     grid-area: box-2; 
-    color: rgb(85, 85, 85);
-    font-family: 'Poiret One', cursive;
-    font-size: 1.2rem;
-    font-weight: bold;
-    letter-spacing: 0.05rem;
-    line-height: 1.6rem;
+    @include section;
 }
 
-.box-2 img {
-    width: 30rem;
-    height: auto;
+// END OF HIKING SECTION
+
+
+// THIS IS THE SECTION FOR THE CLIMBING
+
+.climbing {
+    border-bottom: 2px solid rgb(85, 85, 85);
+    margin: 2rem;
+    padding: 2rem;
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "clmb clmb"
+    "box-3 box-4";
 }
+
+.heading-2 {
+    grid-area: clmb;
+    @include headings;
+}
+
+.box-3 {
+    grid-area: box-3;
+    @include section;
+}
+
+.box-4 {
+    grid-area: box-4; 
+    @include section;
+}
+
+// THIS SECTION IS FOR THE CANOEING
+
+.canoe {
+    padding: 2rem;
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "clmb clmb"
+    "box-3 box-4";
+}
+
+.heading-3 {
+    grid-area: clmb;
+    @include headings;
+}
+
+.box-5 {
+    grid-area: box-3;
+    @include section;
+}
+
+.box-6 {
+    grid-area: box-4; 
+    @include section;
+}
+
+
+
