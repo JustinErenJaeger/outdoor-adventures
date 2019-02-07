@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="wrapper">
+        <section class="contact">
+            <aside class="cont-form">
+                <h2 class="head">Contact Form</h2>
+                <form action="POST" class="personal-info">
+                    <p class="first-name">
+                        <input type="text" name="firstname" placeholder="First Name" required>
+                    </p>
+
+                    <p class="last-name">
+                        <input type="text" name="lastname" placeholder="Last Name" required>
+                    </p>
+                    <p class="email">
+                        <input type="email" name="email" placeholder="example@gmail.com">
+                    </p>
+                    <p>
+                        Which Activity are you interested in ?
+                    </p>
+
+                    <p class="options">
+                        <select name="activities">
+                            <option value="hiking">Hiking</option>
+                            <option value="climbing">Climbing</option>
+                            <option value="canoeing">Canoeing</option>
+                            <option value="hunting">Hunting</option>
+                            <option value="camping">Camping</option>
+                            <option value="fishing">Fising</option>
+                        </select>
+                    </p>
+
+                    <p class="message">
+                        <p><label for="">Leave a comment</label></p>
+                        <textarea name="message" rows="5" cols="30"></textarea>
+                    </p>
+                    
+                    <p class="submit">
+                        <input type="button" value="Submit">
+                    </p>
+                </form>
+            </aside>
+        </section>
+    </div>
+</body>
+</html>

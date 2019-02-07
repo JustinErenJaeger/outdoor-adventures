@@ -1,6 +1,7 @@
 .hiking {
     border-bottom: 2px solid rgb(85, 85, 85);
     padding: 2rem;
+    padding-bottom: 4rem;
     margin: 2rem;
     display: grid;
     grid-gap: 2rem;
@@ -18,6 +19,7 @@
     margin: 10rem 2rem 10rem 2rem;
     padding: 0 2rem;
     font-family: 'Poiret One', cursive;
+    font-family: 'Poiret One' cursive;
     font-weight: bolder;
     font-size: 1.5rem;
     color: rgb(85, 85, 85);
@@ -35,13 +37,11 @@
 }
 
 .box-1 {
-    grid-area: box-1;
-    @include section;
+    @include text;
 }
 
 .box-2 {
-    grid-area: box-2; 
-    @include section;
+    @include text;
 }
 
 // END OF HIKING SECTION
@@ -53,6 +53,7 @@
     border-bottom: 2px solid rgb(85, 85, 85);
     margin: 2rem;
     padding: 2rem;
+    padding-bottom: 4rem;
     display: grid;
     grid-gap: 2rem;
     grid-template-columns: repeat(2, 1fr);
@@ -68,13 +69,157 @@
 
 .content-1 {
     grid-area: box-3;
-    @include section;
+    @include text;
 }
 
 .content-2 {
     grid-area: box-4; 
-    @include section;
+    @include text;
 }
+
+
+
+
+// THIS IS THE STYLES FOR THE GALLERY
+
+.gallery {
+    padding: 4rem;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(7, 11rem);
+    background: rgb(0, 0, 0);
+}
+
+.item img {
+    width: 100%;
+    height: 100%;
+}
+
+.item {
+    box-shadow: 0 0 5px rgb(255, 255, 255);
+    transition: box-shadow 1s ease-in-out, opacity 1s ease-out;
+    opacity: 0.8;
+
+    &.item:hover {
+        box-shadow: 0 0 30px rgb(255, 255, 255);
+        transition: box-shadow 0.2s ease-in-out, opacity 0.5s ease-out;
+        opacity: 1;
+    }
+}
+
+
+
+.pic-1 {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.pic-2 {
+    grid-column: span 2;
+}
+
+.pic-7 {
+    grid-column: span 2;
+}
+
+.pic-8 {
+    grid-column: span 2;
+}
+
+.pic-10 {
+    grid-column: span 3;
+    grid-row: span 2;
+}
+
+.pic-11 {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.pic-15 {
+    grid-column: span 2;
+}
+
+.pic-16 {
+    grid-column: span 3;
+    grid-row: span 2;   
+}
+
+.pic-18 {
+    grid-column: span 2;
+}
+
+
+
+// THIS IS THE INFO FOR THE CONTACT FORM
+
+.contact {
+    background: linear-gradient(rgba(0, 0, 0, 0.747), rgba(0, 0, 0, 0.158)), url(../images/rockclimbing.jpg);
+    background-size: 100% 100%;
+    height: 100vh;
+}
+
+.cont-form {
+    background: rgba(0, 0, 0, 0.219);
+    border-radius: 0.5rem;
+    padding: 1rem 2rem;
+    width: 30%;
+    color: rgb(255, 255, 255);
+    font-family: 'Poiret One', cursive;
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.329);
+}
+
+.head {
+    text-align: center;
+    padding: 1rem;
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+.first-name {
+    
+    input {
+        @include inputs;
+    }
+
+    [type="text"] {
+        @include inputs;
+    }
+}
+
+.last-name {
+    
+    input {
+        @include inputs;
+    }
+
+    [type="text"] {
+        @include inputs;
+    }
+}
+
+.email {
+
+    input {
+        @include inputs;
+    }
+}
+
+.options {
+
+    select {
+        @include inputs;
+        width: 8rem;
+    }
+}
+
+textarea {
+    @include inputs;
+}
+
+
 
 
 

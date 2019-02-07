@@ -1,7 +1,7 @@
 // Mixins
 
 @mixin section {
-    color: rgb(66, 66, 66);
+    color: rgb(119, 119, 119);
     font-family: 'Poiret One', cursive;
     font-size: 1.2rem;
     font-weight: bold;
@@ -9,7 +9,16 @@
     line-height: 1.6rem;
 }
 
+@mixin  text {
+    color: rgb(255, 255, 255);
+    font-family: 'Poiret One', cursive;
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+    line-height: 1.6rem;
+}
+
 @mixin headings {
+    padding-top: 3.5rem;
     color: rgb(85, 85, 85);
     font-family: 'Poiret One', cursive;
     font-size: 5rem;
@@ -28,4 +37,17 @@
     margin-left: 20rem;
     opacity: 0;
     transition: opacity 0.5s ease-out, margin-left 1s ease-out;
+}
+
+@mixin inputs {
+    border-radius: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    outline-style: none;
+    padding: 0.5rem;
+    width: 15rem;
+    color: rgb(19, 19, 19);
+    font-family: 'Poiret One', cursive;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
 }

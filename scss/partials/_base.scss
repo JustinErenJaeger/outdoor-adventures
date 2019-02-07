@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Poiret One';
+    src: url(../fonts/PoiretOne-Regular.ttf);
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -23,7 +28,7 @@ body {
 
 .heading {
     text-align: center;
-    padding-top: 10rem;
+    padding-top: 15rem;
     font-size: 2rem;
     letter-spacing: 0.2rem;
 }
@@ -50,6 +55,26 @@ footer {
     padding: 2rem;
     margin-top: 6rem;
 }
+
+
+
+// THIS IS THE STYLES FOR THE GALLERY
+
+.hero {
+    color: rgb(66, 66, 66);
+    height: 10rem;
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Poiret One', cursive;
+
+    h2 {
+        padding: 1rem;
+        margin: 0 32rem;
+        border-bottom: 2px solid rgb(66, 66, 66);
+    }
+}
+
+
 
 
 

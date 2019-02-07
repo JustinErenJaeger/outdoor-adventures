@@ -1,18 +1,17 @@
-@keyframes move {
-    0% {margin-top: 4rem;}
-    50%{margin-top: 0;}
-    100%{margin-top: 4rem;}
-}
+// STYLES FOR THE NAVBAR
 
 .navbar {
     width: 50%;
     padding: 0.5rem;
+    padding-left: 2rem;
     padding-right: 2rem;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgb(0, 0, 0);
     transform: skew(-45deg);
-    border-bottom: 2px solid rgb(255, 255, 255);
-    border-right: 2px solid rgb(255, 255, 255);
-    // position: fixed;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    border-right: 1px solid rgb(255, 255, 255);
+    position: fixed;
+    margin-left: -3rem;
+    z-index: 2;
 }
 
 .navbar ul {
@@ -38,6 +37,10 @@
                 -2px -2px 60px rgb(255, 255, 255);
 }
   
+
+
+// THIS IS THE STYLES FOR THE DROPDOWN MENU
+
 .dropdown {
     overflow: hidden;
 
@@ -85,71 +88,90 @@
     display: block;
 }
 
+.down p {
+    animation: fade 2s ease infinite;
+    font-family: 'Poiret One', cursive;
+}
+
+@keyframes fade {
+    0%   {opacity: 1;}
+    50%  {opacity: 0;}
+    100% {opacity: 1;}
+}
+
 .arrow {
     width: 6rem;
     height: 6rem;
     animation: move 2s linear infinite;
+
+    @keyframes move {
+        0% {margin-top: 4rem;}
+        50%{margin-top: 0;}
+        100%{margin-top: 4rem;}
+    }
 }
 
 
+
 // ACTIVITIES AND THERE BACKGROUNDS
+
 .act-1 {
-    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/lions-head.jpg);
+    background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../images/lions-head.jpg);
     @include imagebox;
 }
 
 .act-2 {
-    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/plattekli-gorge.jpg);
+    background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../images/plattekli-gorge.jpg);
     @include imagebox;  
 }
 
 .act-3 {
-    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/climbing4.jpg);
+    background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../images/climbing4.jpg);
     @include imagebox;
 }
 
 .act-4 {
-    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/climbing5.jpg);
+    background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../images/climbing5.jpg);
     @include imagebox;
 }
 
 .act-5 {
-    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/canoe4.jpg);
+    background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../images/canoe4.jpg);
     @include imagebox;
 }
 
 .act-6 {
-    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/canoe5.jpg);
+    background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../images/canoe5.jpg);
     @include imagebox;
 }
 
 .act-7 {
-    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/hunting1.jpg);
+    background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../images/hunting1.jpg);
     @include imagebox;
 }
 
 .act-8 {
-    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/lasarus-game-farm.jpg);
+    background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../images/lasarus-game-farm.jpg);
     @include imagebox;
 }
 
 .act-9 {
-    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/camping.jpg);
+    background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../images/camping.jpg);
     @include imagebox;
 }
 
 .act-10 {
-    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/camping1.jpg);
+    background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../images/camping1.jpg);
     @include imagebox;
 }
 
 .act-11 {
-    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/fishing1.jpg);
+    background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../images/fishing1.jpg);
     @include imagebox;
 }
 
 .act-12 {
-    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/fishing2.jpg);
+    background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../images/fishing2.jpg);
     @include imagebox;
 }
 
@@ -160,80 +182,92 @@
 // THIS IS THE STYLES FOR THE TEXT ON THE IMAGES
 
 .slide {
-    font-size: 2rem;
-    padding-top: 12rem;
+    font-size: 1.2rem;
+    padding: 12rem 0 1rem 0;
+    margin: 0; 
     text-align: center;
     color: rgba(255, 255, 255, 0.726);
     opacity: 1;
     transition: opacity 0.5s ease-out, margin-left 0.5s ease-out;
 }
 
+.info {
+    height: 6rem;
+    text-align: center;
+    opacity: 0;
+    padding: 0 1rem;
+    transition: opacity 0.5s ease-out;
+    margin: 0;
+}
+
 
 
 // IMAGE FULL OPACITY EFFECT FOR EACH ACTIVITY
+
 .bg-1:hover .act-1 {
-    background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../images/lions-head.jpg);
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/lions-head.jpg);
     @include imagebox;
 }
 
 .bg-2:hover .act-2 {
-    background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../images/plattekli-gorge.jpg);
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/plattekli-gorge.jpg);
     @include imagebox;
 }
 
 .bg-3:hover .act-3 {
-    background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../images/climbing4.jpg);
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/climbing4.jpg);
     @include imagebox;
 }
 
 .bg-4:hover .act-4 {
-    background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../images/climbing5.jpg);
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/climbing5.jpg);
     @include imagebox;
 }
 
 .bg-5:hover .act-5 {
-    background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../images/canoe4.jpg);
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/canoe4.jpg);
     @include imagebox;
 }
 
 .bg-6:hover .act-6 {
-    background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../images/canoe5.jpg);
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/canoe5.jpg);
     @include imagebox;
 }
 
 .bg-7:hover .act-7 {
-    background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../images/hunting1.jpg);
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/hunting1.jpg);
     @include imagebox;
 }
 
 .bg-8:hover .act-8 {
-    background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../images/lasarus-game-farm.jpg);
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/lasarus-game-farm.jpg);
     @include imagebox;
 }
 
 .bg-9:hover .act-9 {
-    background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../images/camping.jpg);
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/camping.jpg);
     @include imagebox;
 }
 
 .bg-10:hover .act-10 {
-    background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../images/camping1.jpg);
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/camping1.jpg);
     @include imagebox;
 }
 
 .bg-11:hover .act-11 {
-    background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../images/fishing1.jpg);
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/fishing1.jpg);
     @include imagebox;
 }
 
 .bg-12:hover .act-12 {
-    background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../images/fishing2.jpg);
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/fishing2.jpg);
     @include imagebox;
 }
 
 
-// SLIDE IN ANIMATION FOR THE TITLES OF EACH ACTIVITIES
 
+
+// SLIDE IN ANIMATION FOR THE TITLES OF EACH ACTIVITIES
 
 .box-1:hover .slide {
     @include act-name-slider;
@@ -251,27 +285,50 @@
     @include act-name-slider;
 }
 
-.read-more {
-    width: 100%;
-    padding: 1rem;
-    border: none;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-    font-family: 'Poiret One', cursive;
-    font-size: 1.4rem;
-    font-weight: bold;
-    color: rgb(160, 160, 160);
 
-    &:hover {
-        box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5);
-        background-color: rgb(194, 194, 194);
-        transition: background-color 0.4s ease-out;
-        color: rgb(56, 56, 56);
-    }
+
+
+// HOVER EFFECT FOR FOR THE PARAGRAPHS 
+
+.content-1:hover .info {
+    opacity: 1;
+    transition: opacity 0.5s ease-out;
+}
+
+.content-2:hover .info {
+    opacity: 1;
+    transition: opacity 0.5s ease-out;
+}
+
+.box-1:hover .info {
+    opacity: 1;
+    transition: opacity 0.5s ease-out;
+}
+
+.box-2:hover .info {
+    opacity: 1;
+    transition: opacity 0.5s ease-out;
 }
 
 
 
+// STYLES FOR THE READMORE BUTTONS
+
+.read-more {
+    text-align: center;
+    padding: 1rem;
+    margin: 0;
+    color: rgb(253, 253, 253);
+    text-decoration: underline;
+
+    a {
+        color: rgb(253, 253, 253);
+    }
+
+    a:hover {
+        color: rgb(255, 179, 0);
+    }
+}
 
 
 
