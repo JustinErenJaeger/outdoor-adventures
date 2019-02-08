@@ -1,0 +1,76 @@
+// RESPONSIVE FOR TABLET
+
+@media (max-width: 700px) {
+
+    .hiking {
+        display: block;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4,10rem);
+        grid-template-areas: 
+        "intro"
+        "hiking"
+        "box-1"
+        "box-2";
+    }
+
+    .activities {
+        border-bottom: 2px solid rgb(85, 85, 85);
+        margin: 1rem;
+        padding-bottom: 4rem;
+        display: block;
+        grid-gap: 1rem;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+        "clmb"
+        "box-3"
+        "box-4";
+    }
+
+    .content-1 {
+        margin-top: 1rem;
+    }
+
+    .content-2 {
+        margin-top: 1rem;
+    }
+
+    .slide {
+        font-size: 1.4rem;
+        padding: 2rem 0 1rem 0;
+        margin: 0; 
+        text-align: center;
+        text-shadow: 2px 2px 1px rgb(0, 0, 0);
+        color: rgba(199, 199, 199, 0.726);
+        font-weight: bold;
+        opacity: 1;
+        transition: opacity 0.5s ease-out, margin-left 0.5s ease-out;
+    }
+
+    
+    .info {
+        font-size: 0.8rem;
+        line-height: 0.9rem;
+        height: 2rem;
+        text-align: center;
+        opacity: 0;
+        padding: 0 1rem;
+        transition: opacity 0.5s ease-out;
+        margin: 0;
+    }
+
+    .read-more {
+        text-align: center;
+        padding: 1rem;
+        margin-top: 5rem;
+        color: rgb(253, 253, 253);
+        text-decoration: underline;
+    
+        a {
+            color: rgb(253, 253, 253);
+        }
+    
+        a:hover {
+            color: rgb(255, 179, 0);
+        }
+    }
+}

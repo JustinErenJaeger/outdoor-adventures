@@ -89,83 +89,77 @@
 .act-1 {
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../images/lions-head.jpg);
   width: 100%;
-  height: 24rem;
+  height: 15rem;
   background-size: 100% 100%; }
 
 .act-2 {
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../images/plattekli-gorge.jpg);
   width: 100%;
-  height: 24rem;
+  height: 15rem;
   background-size: 100% 100%; }
 
 .act-3 {
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../images/climbing4.jpg);
   width: 100%;
-  height: 24rem;
+  height: 15rem;
   background-size: 100% 100%; }
 
 .act-4 {
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../images/climbing5.jpg);
   width: 100%;
-  height: 24rem;
+  height: 15rem;
   background-size: 100% 100%; }
 
 .act-5 {
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../images/canoe4.jpg);
   width: 100%;
-  height: 24rem;
+  height: 15rem;
   background-size: 100% 100%; }
 
 .act-6 {
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../images/canoe5.jpg);
   width: 100%;
-  height: 24rem;
+  height: 15rem;
   background-size: 100% 100%; }
 
 .act-7 {
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../images/hunting1.jpg);
   width: 100%;
-  height: 24rem;
+  height: 15rem;
   background-size: 100% 100%; }
 
 .act-8 {
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../images/lasarus-game-farm.jpg);
   width: 100%;
-  height: 24rem;
+  height: 15rem;
   background-size: 100% 100%; }
 
 .act-9 {
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../images/camping.jpg);
   width: 100%;
-  height: 24rem;
+  height: 15rem;
   background-size: 100% 100%; }
 
 .act-10 {
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../images/camping1.jpg);
   width: 100%;
-  height: 24rem;
+  height: 15rem;
   background-size: 100% 100%; }
 
 .act-11 {
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../images/fishing1.jpg);
   width: 100%;
-  height: 24rem;
+  height: 15rem;
   background-size: 100% 100%; }
 
 .act-12 {
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../images/fishing2.jpg);
   width: 100%;
-  height: 24rem;
+  height: 15rem;
   background-size: 100% 100%; }
 
 .slide {
-  font-size: 1.2rem;
-  padding: 12rem 0 1rem 0;
-  margin: 0;
-  text-align: center;
-  color: rgba(255, 255, 255, 0.726);
-  opacity: 1;
-  transition: opacity 0.5s ease-out, margin-left 0.5s ease-out; }
+  padding: 2rem; }
 
 .info {
   height: 6rem;
@@ -178,94 +172,74 @@
 .bg-1:hover .act-1 {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/lions-head.jpg);
   width: 100%;
-  height: 24rem;
+  height: 15rem;
   background-size: 100% 100%; }
 
 .bg-2:hover .act-2 {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/plattekli-gorge.jpg);
   width: 100%;
-  height: 24rem;
+  height: 15rem;
   background-size: 100% 100%; }
 
 .bg-3:hover .act-3 {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/climbing4.jpg);
   width: 100%;
-  height: 24rem;
+  height: 15rem;
   background-size: 100% 100%; }
 
 .bg-4:hover .act-4 {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/climbing5.jpg);
   width: 100%;
-  height: 24rem;
+  height: 15rem;
   background-size: 100% 100%; }
 
 .bg-5:hover .act-5 {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/canoe4.jpg);
   width: 100%;
-  height: 24rem;
+  height: 15rem;
   background-size: 100% 100%; }
 
 .bg-6:hover .act-6 {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/canoe5.jpg);
   width: 100%;
-  height: 24rem;
+  height: 15rem;
   background-size: 100% 100%; }
 
 .bg-7:hover .act-7 {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/hunting1.jpg);
   width: 100%;
-  height: 24rem;
+  height: 15rem;
   background-size: 100% 100%; }
 
 .bg-8:hover .act-8 {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/lasarus-game-farm.jpg);
   width: 100%;
-  height: 24rem;
+  height: 15rem;
   background-size: 100% 100%; }
 
 .bg-9:hover .act-9 {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/camping.jpg);
   width: 100%;
-  height: 24rem;
+  height: 15rem;
   background-size: 100% 100%; }
 
 .bg-10:hover .act-10 {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/camping1.jpg);
   width: 100%;
-  height: 24rem;
+  height: 15rem;
   background-size: 100% 100%; }
 
 .bg-11:hover .act-11 {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/fishing1.jpg);
   width: 100%;
-  height: 24rem;
+  height: 15rem;
   background-size: 100% 100%; }
 
 .bg-12:hover .act-12 {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/fishing2.jpg);
   width: 100%;
-  height: 24rem;
+  height: 15rem;
   background-size: 100% 100%; }
-
-.box-1:hover .slide {
-  margin-left: 20rem;
-  opacity: 0;
-  transition: opacity 0.5s ease-out, margin-left 1s ease-out; }
-
-.box-2:hover .slide {
-  margin-left: 20rem;
-  opacity: 0;
-  transition: opacity 0.5s ease-out, margin-left 1s ease-out; }
-
-.content-1:hover .slide {
-  margin-left: 20rem;
-  opacity: 0;
-  transition: opacity 0.5s ease-out, margin-left 1s ease-out; }
-
-.content-2:hover .slide {
-  margin-left: 20rem;
-  opacity: 0;
-  transition: opacity 0.5s ease-out, margin-left 1s ease-out; }
 
 .content-1:hover .info {
   opacity: 1;
@@ -293,6 +267,26 @@
     color: #fdfdfd; }
   .read-more a:hover {
     color: #ffb300; }
+
+.details {
+  margin-top: 4rem;
+  padding: rem; }
+
+.icon i {
+  font-size: 5rem;
+  padding: 2rem 0 2rem 0;
+  width: 4rem;
+  height: 4rem; }
+
+.icon span {
+  margin-left: 1rem;
+  opacity: 0;
+  transition: margin-left 1s ease-out, opacity 1s ease-out; }
+
+.icon:hover span {
+  margin-left: 4rem;
+  opacity: 1;
+  transition: margin-left 0.3s ease-out, opacity 0.3s ease-out; }
 
 @font-face {
   font-family: 'Poiret One';
@@ -337,7 +331,7 @@ footer {
   color: white;
   text-align: center;
   background: black;
-  border-bottom: 1rem solid white;
+  border-top: 2px solid white;
   padding: 2rem;
   margin-top: 6rem; }
 
@@ -354,9 +348,8 @@ footer {
 
 .hiking {
   border-bottom: 2px solid #555555;
-  padding: 2rem;
+  padding: 1rem;
   padding-bottom: 4rem;
-  margin: 2rem;
   display: grid;
   grid-gap: 2rem;
   grid-template-columns: repeat(2, 1fr);
@@ -489,108 +482,156 @@ footer {
 .pic-18 {
   grid-column: span 2; }
 
-.contact {
-  background: linear-gradient(rgba(0, 0, 0, 0.747), rgba(0, 0, 0, 0.158)), url(../images/rockclimbing.jpg);
-  background-size: 100% 100%;
-  height: 100vh; }
+.contact-form {
+  background: linear-gradient(-45deg, rgba(0, 0, 0, 0.9) 50%, rgba(0, 0, 0, 0.8) 50%), url(../images/woods.jpg);
+  background-size: 100% 42rem; }
 
-.cont-form {
-  background: rgba(0, 0, 0, 0.219);
-  border-radius: 0.5rem;
+.contact {
   padding: 1rem 2rem;
-  width: 30%;
   color: white;
   font-family: 'Poiret One', cursive;
   font-size: 1.2rem;
   letter-spacing: 0.1rem;
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.329); }
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-areas: "contact-information contact-form"; }
+
+.detais {
+  display: grid;
+  grid-template-columns: 1fr; }
+
+.details {
+  grid-area: contact-information; }
+
+.contact-form {
+  grid-area: contact-form; }
 
 .head {
+  padding: 1rem; }
+
+.first-last-name input {
   text-align: center;
-  padding: 1rem;
-  border-bottom: 2px solid white; }
-
-.first-name input {
-  border-radius: 1rem;
-  border: 1px solid rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.5);
   outline-style: none;
-  padding: 0.5rem;
-  width: 15rem;
-  color: #131313;
+  padding: 0.6rem;
+  width: 12rem;
+  color: white;
   font-family: 'Poiret One', cursive;
   font-size: 1rem;
-  font-weight: bold;
-  letter-spacing: 0.1rem; }
-.first-name [type="text"] {
-  border-radius: 1rem;
-  border: 1px solid rgba(0, 0, 0, 0.5);
+  letter-spacing: 0.1rem;
+  background: black; }
+.first-last-name [type="text"] {
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.5);
   outline-style: none;
-  padding: 0.5rem;
-  width: 15rem;
-  color: #131313;
+  padding: 0.6rem;
+  width: 12rem;
+  color: white;
   font-family: 'Poiret One', cursive;
   font-size: 1rem;
-  font-weight: bold;
-  letter-spacing: 0.1rem; }
-
-.last-name input {
-  border-radius: 1rem;
-  border: 1px solid rgba(0, 0, 0, 0.5);
-  outline-style: none;
-  padding: 0.5rem;
-  width: 15rem;
-  color: #131313;
-  font-family: 'Poiret One', cursive;
-  font-size: 1rem;
-  font-weight: bold;
-  letter-spacing: 0.1rem; }
-.last-name [type="text"] {
-  border-radius: 1rem;
-  border: 1px solid rgba(0, 0, 0, 0.5);
-  outline-style: none;
-  padding: 0.5rem;
-  width: 15rem;
-  color: #131313;
-  font-family: 'Poiret One', cursive;
-  font-size: 1rem;
-  font-weight: bold;
-  letter-spacing: 0.1rem; }
+  letter-spacing: 0.1rem;
+  background: black; }
 
 .email input {
-  border-radius: 1rem;
-  border: 1px solid rgba(0, 0, 0, 0.5);
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.5);
   outline-style: none;
-  padding: 0.5rem;
-  width: 15rem;
-  color: #131313;
+  padding: 0.6rem;
+  width: 12rem;
+  color: white;
   font-family: 'Poiret One', cursive;
   font-size: 1rem;
-  font-weight: bold;
-  letter-spacing: 0.1rem; }
-
-.options select {
-  border-radius: 1rem;
-  border: 1px solid rgba(0, 0, 0, 0.5);
-  outline-style: none;
-  padding: 0.5rem;
-  width: 15rem;
-  color: #131313;
-  font-family: 'Poiret One', cursive;
-  font-size: 1rem;
-  font-weight: bold;
   letter-spacing: 0.1rem;
-  width: 8rem; }
+  background: black; }
+.email select {
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  outline-style: none;
+  padding: 0.6rem;
+  width: 12rem;
+  color: white;
+  font-family: 'Poiret One', cursive;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  background: black;
+  padding: 0.53rem;
+  width: 13.32rem; }
 
 textarea {
-  border-radius: 1rem;
-  border: 1px solid rgba(0, 0, 0, 0.5);
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.5);
   outline-style: none;
-  padding: 0.5rem;
-  width: 15rem;
-  color: #131313;
+  padding: 0.6rem;
+  width: 12rem;
+  color: white;
   font-family: 'Poiret One', cursive;
   font-size: 1rem;
-  font-weight: bold;
-  letter-spacing: 0.1rem; }
+  letter-spacing: 0.1rem;
+  background: black;
+  text-align: left; }
+
+.submit input {
+  color: white;
+  padding: 0.5rem;
+  background: black;
+  border: 1px solid white;
+  font-family: 'Poiret One', cursive;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  width: 13.3rem; }
+
+@media (max-width: 700px) {
+  .hiking {
+    display: block;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 10rem);
+    grid-template-areas: "intro" "hiking" "box-1" "box-2"; }
+
+  .activities {
+    border-bottom: 2px solid #555555;
+    margin: 1rem;
+    padding-bottom: 4rem;
+    display: block;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "clmb" "box-3" "box-4"; }
+
+  .content-1 {
+    margin-top: 1rem; }
+
+  .content-2 {
+    margin-top: 1rem; }
+
+  .slide {
+    font-size: 1.4rem;
+    padding: 2rem 0 1rem 0;
+    margin: 0;
+    text-align: center;
+    text-shadow: 2px 2px 1px black;
+    color: rgba(199, 199, 199, 0.726);
+    font-weight: bold;
+    opacity: 1;
+    transition: opacity 0.5s ease-out, margin-left 0.5s ease-out; }
+
+  .info {
+    font-size: 0.8rem;
+    line-height: 0.9rem;
+    height: 2rem;
+    text-align: center;
+    opacity: 0;
+    padding: 0 1rem;
+    transition: opacity 0.5s ease-out;
+    margin: 0; }
+
+  .read-more {
+    text-align: center;
+    padding: 1rem;
+    margin-top: 5rem;
+    color: #fdfdfd;
+    text-decoration: underline; }
+    .read-more a {
+      color: #fdfdfd; }
+    .read-more a:hover {
+      color: #ffb300; } }
 
 /*# sourceMappingURL=main.css.map */

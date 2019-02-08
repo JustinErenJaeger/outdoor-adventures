@@ -7,27 +7,58 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<body class="contact-form">
     <div class="wrapper">
+        <nav class="navbar">
+                <ul>
+                    <li>
+                        <a href="#">home</a>
+                    </li>
+                    <div class="dropdown">
+                        <a href="#">activities<i class="fas fa-sort-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="#hiking">hiking</a>
+                            <a href="#climbing">climbing</a>
+                            <a href="#canoe">canoeing</a>
+                            <a href="#hunting">hunting</a>
+                            <a href="#camping">camping</a>
+                            <a href="#fishing">fishing</a>
+                        </div>
+                    </div> 
+                    <li>
+                        <a href="gallery.html">gallery</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">contact</a>
+                    </li>
+                </ul>
+            </nav>
         <section class="contact">
-            <aside class="cont-form">
+            <aside class="details">
+                <div class="icon icon-1">
+                    <i class="fab fa-facebook-square"></i>
+                    <span>Follow us one Facebook</span>
+                </div>
+                <div class="icon icon-2">
+                    <i class="fas fa-phone-square"></i>
+                    <span>Contact us 0718553569</span>
+                </div>
+                <div class="icon icon-3">
+                    <i class="fab fa-google-plus-g"></i>
+                    <span>soulcali789@gmail.com</span>
+                </div>
+            </aside>
+                <div class="cont-form">
                 <h2 class="head">Contact Form</h2>
                 <form action="POST" class="personal-info">
-                    <p class="first-name">
+                    <p class="first-last-name">
                         <input type="text" name="firstname" placeholder="First Name" required>
-                    </p>
-
-                    <p class="last-name">
                         <input type="text" name="lastname" placeholder="Last Name" required>
+                        
                     </p>
                     <p class="email">
                         <input type="email" name="email" placeholder="example@gmail.com">
-                    </p>
-                    <p>
-                        Which Activity are you interested in ?
-                    </p>
-
-                    <p class="options">
                         <select name="activities">
                             <option value="hiking">Hiking</option>
                             <option value="climbing">Climbing</option>
@@ -44,11 +75,16 @@
                     </p>
                     
                     <p class="submit">
-                        <input type="button" value="Submit">
+                        <input type="button" value="Lets Explore Wild !">
                     </p>
                 </form>
-            </aside>
+            </div>
         </section>
     </div>
+    <!-- THIS IS THE FOOTER -->
+
+    <footer>
+        <p>&copy;2019 Justion Creighton</p>
+    </footer>
 </body>
 </html>

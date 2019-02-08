@@ -29,7 +29,7 @@
 
 @mixin imagebox {
     width: 100%;
-    height: 24rem;
+    height: 15rem;
     background-size: 100% 100%;
 }
 
@@ -40,14 +40,14 @@
 }
 
 @mixin inputs {
-    border-radius: 1rem;
-    border: 1px solid rgba(0, 0, 0, 0.5);
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.5);
     outline-style: none;
-    padding: 0.5rem;
-    width: 15rem;
-    color: rgb(19, 19, 19);
+    padding: 0.6rem;
+    width: 12rem;
+    color: rgb(255, 255, 255);
     font-family: 'Poiret One', cursive;
     font-size: 1rem;
-    font-weight: bold;
     letter-spacing: 0.1rem;
+    background: rgb(0, 0, 0);
 }

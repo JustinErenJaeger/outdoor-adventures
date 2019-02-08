@@ -1,3 +1,4 @@
+
 // STYLES FOR THE NAVBAR
 
 .navbar {
@@ -182,13 +183,7 @@
 // THIS IS THE STYLES FOR THE TEXT ON THE IMAGES
 
 .slide {
-    font-size: 1.2rem;
-    padding: 12rem 0 1rem 0;
-    margin: 0; 
-    text-align: center;
-    color: rgba(255, 255, 255, 0.726);
-    opacity: 1;
-    transition: opacity 0.5s ease-out, margin-left 0.5s ease-out;
+    padding: 2rem;
 }
 
 .info {
@@ -266,28 +261,6 @@
 
 
 
-
-// SLIDE IN ANIMATION FOR THE TITLES OF EACH ACTIVITIES
-
-.box-1:hover .slide {
-    @include act-name-slider;
-}
-
-.box-2:hover .slide {
-    @include act-name-slider;
-}
-
-.content-1:hover .slide {
-    @include act-name-slider;
-}
-
-.content-2:hover .slide {
-    @include act-name-slider;
-}
-
-
-
-
 // HOVER EFFECT FOR FOR THE PARAGRAPHS 
 
 .content-1:hover .info {
@@ -329,6 +302,36 @@
         color: rgb(255, 179, 0);
     }
 }
+
+
+
+// THIS IS THE STYLES FOR THE CONTACT FORM
+
+
+.details {
+    margin-top: 4rem;
+    padding: rem;
+}
+
+.icon i {
+    font-size: 5rem;
+    padding: 2rem 0 2rem 0;
+    width: 4rem;
+    height: 4rem;
+}
+
+.icon span {
+    margin-left: 1rem;
+    opacity: 0;
+    transition: margin-left 1s ease-out, opacity 1s ease-out;
+}
+
+.icon:hover span {
+    margin-left: 4rem;
+    opacity: 1;
+    transition: margin-left 0.3s ease-out, opacity 0.3s ease-out;
+}
+
 
 
 
