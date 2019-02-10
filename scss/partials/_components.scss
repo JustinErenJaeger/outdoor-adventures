@@ -2,7 +2,7 @@
 // STYLES FOR THE NAVBAR
 
 .navbar {
-    width: 50%;
+    width: 70vw;
     padding: 0.5rem;
     padding-left: 2rem;
     padding-right: 2rem;
@@ -22,14 +22,26 @@
    transform: skew(45deg);
 }
 
-.navbar a {
-    text-decoration: none;
-    color: rgba(255, 255, 255, 0.65);
-    text-transform: uppercase;
-    letter-spacing: 0.1rem;
-    padding: 1.5rem;
-    text-align: left;
-    font-family: 'Poiret One', cursive;
+.navbar {
+    
+    a {
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.65);
+        text-transform: uppercase;
+        letter-spacing: 0.1rem;
+        padding: 1rem;;
+        text-align: left;
+        font-family: 'Poiret One', cursive;
+    }
+
+    li {
+        text-align: center;
+    }
+
+    .active {
+        border-bottom: 1px solid rgb(255, 255, 255);
+        padding: 0 1rem;
+    }
 }
 
 .navbar a:hover {
@@ -43,19 +55,13 @@
 // THIS IS THE STYLES FOR THE DROPDOWN MENU
 
 .dropdown {
-    overflow: hidden;
-
-    i {
-        padding-left: 0.2rem;
-        color: rgb(255, 255, 255);
-    }
+    // overflow: hidden;
 
     .dropdown .dropbtn {
         font-size: 16px; 
         border: none;
         outline: none;
-        color: white;
-        background-color: inherit;
+        color: rgb(0, 0, 0);
         font-family: inherit; 
         margin: 0; 
     }
@@ -81,6 +87,12 @@
         background: rgb(255, 255, 255);
         color: rgb(0, 0, 0);
         font-weight: bolder;
+    }
+
+    .menu {
+        background: rgb(255, 255, 255);
+        padding: 1rem;
+        color: rgb(0, 0, 0)
     }
     
 }
@@ -119,61 +131,73 @@
 .act-1 {
     background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../images/lions-head.jpg);
     @include imagebox;
+    height: 24rem;
 }
 
 .act-2 {
     background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../images/plattekli-gorge.jpg);
     @include imagebox;  
+    height: 24rem;
 }
 
 .act-3 {
     background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../images/climbing4.jpg);
     @include imagebox;
+    height: 24rem;
 }
 
 .act-4 {
     background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../images/climbing5.jpg);
     @include imagebox;
+    height: 24rem;
 }
 
 .act-5 {
     background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../images/canoe4.jpg);
     @include imagebox;
+    height: 24rem;
 }
 
 .act-6 {
     background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../images/canoe5.jpg);
     @include imagebox;
+    height: 24rem;
 }
 
 .act-7 {
     background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../images/hunting1.jpg);
     @include imagebox;
+    height: 24rem;
 }
 
 .act-8 {
     background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../images/lasarus-game-farm.jpg);
     @include imagebox;
+    height: 24rem;
 }
 
 .act-9 {
     background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../images/camping.jpg);
     @include imagebox;
+    height: 24rem;
 }
 
 .act-10 {
     background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../images/camping1.jpg);
     @include imagebox;
+    height: 24rem;
 }
 
 .act-11 {
     background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../images/fishing1.jpg);
     @include imagebox;
+    height: 24rem;
 }
 
 .act-12 {
     background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../images/fishing2.jpg);
     @include imagebox;
+    height: 24rem;
 }
 
 
@@ -260,6 +284,37 @@
 }
 
 
+.slide {
+    text-align: center;
+    padding-top: 8rem;
+    transition: opacity 0.5s ease-out, margin-left 0.5s ease-out;
+    
+}
+
+.content-1:hover .slide {
+    margin-left: 8rem;
+    opacity: 0;
+    transition: opacity 0.5s ease-out, margin-left 0.5s ease-out;
+}
+
+.content-2:hover .slide {
+    margin-left: 8rem;
+    opacity: 0;
+    transition: opacity 0.5s ease-out, margin-left 0.5s ease-out;
+}
+
+.box-1:hover .slide {
+    margin-left: 8rem;
+    opacity: 0;
+    transition: opacity 0.5s ease-out, margin-left 0.5s ease-out;
+}
+
+.box-2:hover .slide {
+    margin-left: 8rem;
+    opacity: 0;
+    transition: opacity 0.5s ease-out, margin-left 0.5s ease-out;
+}
+
 
 // HOVER EFFECT FOR FOR THE PARAGRAPHS 
 
@@ -289,12 +344,12 @@
 
 .read-more {
     text-align: center;
-    padding: 1rem;
+    padding: 2rem;
     margin: 0;
     color: rgb(253, 253, 253);
     text-decoration: underline;
 
-    a {
+    a:link {
         color: rgb(253, 253, 253);
     }
 
@@ -331,6 +386,7 @@
     opacity: 1;
     transition: margin-left 0.3s ease-out, opacity 0.3s ease-out;
 }
+
 
 
 

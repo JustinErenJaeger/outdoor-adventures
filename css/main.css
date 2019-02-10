@@ -1,5 +1,5 @@
 .navbar {
-  width: 50%;
+  width: 70vw;
   padding: 0.5rem;
   padding-left: 2rem;
   padding-right: 2rem;
@@ -22,44 +22,47 @@
   color: rgba(255, 255, 255, 0.65);
   text-transform: uppercase;
   letter-spacing: 0.1rem;
-  padding: 1.5rem;
+  padding: 1rem;
   text-align: left;
   font-family: 'Poiret One', cursive; }
+.navbar li {
+  text-align: center; }
+.navbar .active {
+  border-bottom: 1px solid white;
+  padding: 0 1rem; }
 
 .navbar a:hover {
   color: white;
   text-shadow: 2px 2px 60px white, -2px -2px 60px white; }
 
-.dropdown {
-  overflow: hidden; }
-  .dropdown i {
-    padding-left: 0.2rem;
-    color: white; }
-  .dropdown .dropdown .dropbtn {
-    font-size: 16px;
-    border: none;
-    outline: none;
-    color: white;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0; }
-  .dropdown .dropdown-content {
-    padding-top: 1.5rem;
-    display: none;
-    position: absolute;
-    width: 10rem;
-    height: 0; }
-  .dropdown .dropdown-content a {
-    display: block;
-    border-bottom: 0.3px solid black;
-    background: rgba(0, 0, 0, 0.8);
-    color: white; }
-  .dropdown .dropdown-content a:hover {
-    display: block;
-    border-bottom: 0.3px solid black;
-    background: white;
-    color: black;
-    font-weight: bolder; }
+.dropdown .dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: black;
+  font-family: inherit;
+  margin: 0; }
+.dropdown .dropdown-content {
+  padding-top: 1.5rem;
+  display: none;
+  position: absolute;
+  width: 10rem;
+  height: 0; }
+.dropdown .dropdown-content a {
+  display: block;
+  border-bottom: 0.3px solid black;
+  background: rgba(0, 0, 0, 0.8);
+  color: white; }
+.dropdown .dropdown-content a:hover {
+  display: block;
+  border-bottom: 0.3px solid black;
+  background: white;
+  color: black;
+  font-weight: bolder; }
+.dropdown .menu {
+  background: white;
+  padding: 1rem;
+  color: black; }
 
 .dropdown:hover .dropdown-content {
   display: block; }
@@ -89,74 +92,74 @@
 .act-1 {
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../images/lions-head.jpg);
   width: 100%;
-  height: 15rem;
-  background-size: 100% 100%; }
+  background-size: 100% 100%;
+  height: 24rem; }
 
 .act-2 {
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../images/plattekli-gorge.jpg);
   width: 100%;
-  height: 15rem;
-  background-size: 100% 100%; }
+  background-size: 100% 100%;
+  height: 24rem; }
 
 .act-3 {
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../images/climbing4.jpg);
   width: 100%;
-  height: 15rem;
-  background-size: 100% 100%; }
+  background-size: 100% 100%;
+  height: 24rem; }
 
 .act-4 {
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../images/climbing5.jpg);
   width: 100%;
-  height: 15rem;
-  background-size: 100% 100%; }
+  background-size: 100% 100%;
+  height: 24rem; }
 
 .act-5 {
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../images/canoe4.jpg);
   width: 100%;
-  height: 15rem;
-  background-size: 100% 100%; }
+  background-size: 100% 100%;
+  height: 24rem; }
 
 .act-6 {
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../images/canoe5.jpg);
   width: 100%;
-  height: 15rem;
-  background-size: 100% 100%; }
+  background-size: 100% 100%;
+  height: 24rem; }
 
 .act-7 {
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../images/hunting1.jpg);
   width: 100%;
-  height: 15rem;
-  background-size: 100% 100%; }
+  background-size: 100% 100%;
+  height: 24rem; }
 
 .act-8 {
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../images/lasarus-game-farm.jpg);
   width: 100%;
-  height: 15rem;
-  background-size: 100% 100%; }
+  background-size: 100% 100%;
+  height: 24rem; }
 
 .act-9 {
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../images/camping.jpg);
   width: 100%;
-  height: 15rem;
-  background-size: 100% 100%; }
+  background-size: 100% 100%;
+  height: 24rem; }
 
 .act-10 {
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../images/camping1.jpg);
   width: 100%;
-  height: 15rem;
-  background-size: 100% 100%; }
+  background-size: 100% 100%;
+  height: 24rem; }
 
 .act-11 {
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../images/fishing1.jpg);
   width: 100%;
-  height: 15rem;
-  background-size: 100% 100%; }
+  background-size: 100% 100%;
+  height: 24rem; }
 
 .act-12 {
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../images/fishing2.jpg);
   width: 100%;
-  height: 15rem;
-  background-size: 100% 100%; }
+  background-size: 100% 100%;
+  height: 24rem; }
 
 .slide {
   padding: 2rem; }
@@ -172,74 +175,87 @@
 .bg-1:hover .act-1 {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/lions-head.jpg);
   width: 100%;
-  height: 15rem;
   background-size: 100% 100%; }
 
 .bg-2:hover .act-2 {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/plattekli-gorge.jpg);
   width: 100%;
-  height: 15rem;
   background-size: 100% 100%; }
 
 .bg-3:hover .act-3 {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/climbing4.jpg);
   width: 100%;
-  height: 15rem;
   background-size: 100% 100%; }
 
 .bg-4:hover .act-4 {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/climbing5.jpg);
   width: 100%;
-  height: 15rem;
   background-size: 100% 100%; }
 
 .bg-5:hover .act-5 {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/canoe4.jpg);
   width: 100%;
-  height: 15rem;
   background-size: 100% 100%; }
 
 .bg-6:hover .act-6 {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/canoe5.jpg);
   width: 100%;
-  height: 15rem;
   background-size: 100% 100%; }
 
 .bg-7:hover .act-7 {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/hunting1.jpg);
   width: 100%;
-  height: 15rem;
   background-size: 100% 100%; }
 
 .bg-8:hover .act-8 {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/lasarus-game-farm.jpg);
   width: 100%;
-  height: 15rem;
   background-size: 100% 100%; }
 
 .bg-9:hover .act-9 {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/camping.jpg);
   width: 100%;
-  height: 15rem;
   background-size: 100% 100%; }
 
 .bg-10:hover .act-10 {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/camping1.jpg);
   width: 100%;
-  height: 15rem;
   background-size: 100% 100%; }
 
 .bg-11:hover .act-11 {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/fishing1.jpg);
   width: 100%;
-  height: 15rem;
   background-size: 100% 100%; }
 
 .bg-12:hover .act-12 {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/fishing2.jpg);
   width: 100%;
-  height: 15rem;
   background-size: 100% 100%; }
+
+.slide {
+  text-align: center;
+  padding-top: 8rem;
+  transition: opacity 0.5s ease-out, margin-left 0.5s ease-out; }
+
+.content-1:hover .slide {
+  margin-left: 8rem;
+  opacity: 0;
+  transition: opacity 0.5s ease-out, margin-left 0.5s ease-out; }
+
+.content-2:hover .slide {
+  margin-left: 8rem;
+  opacity: 0;
+  transition: opacity 0.5s ease-out, margin-left 0.5s ease-out; }
+
+.box-1:hover .slide {
+  margin-left: 8rem;
+  opacity: 0;
+  transition: opacity 0.5s ease-out, margin-left 0.5s ease-out; }
+
+.box-2:hover .slide {
+  margin-left: 8rem;
+  opacity: 0;
+  transition: opacity 0.5s ease-out, margin-left 0.5s ease-out; }
 
 .content-1:hover .info {
   opacity: 1;
@@ -259,11 +275,11 @@
 
 .read-more {
   text-align: center;
-  padding: 1rem;
+  padding: 2rem;
   margin: 0;
   color: #fdfdfd;
   text-decoration: underline; }
-  .read-more a {
+  .read-more a:link {
     color: #fdfdfd; }
   .read-more a:hover {
     color: #ffb300; }
@@ -336,22 +352,21 @@ footer {
   margin-top: 6rem; }
 
 .hero {
+  margin-top: 4rem;
   color: #424242;
-  height: 10rem;
+  height: 6rem;
   text-align: center;
-  font-size: 3rem;
+  font-size: 2rem;
   font-family: 'Poiret One', cursive; }
   .hero h2 {
     padding: 1rem;
-    margin: 0 32rem;
     border-bottom: 2px solid #424242; }
 
 .hiking {
   border-bottom: 2px solid #555555;
-  padding: 1rem;
   padding-bottom: 4rem;
   display: grid;
-  grid-gap: 2rem;
+  grid-gap: 1rem;
   grid-template-columns: repeat(2, 1fr);
   grid-template-areas: "intro intro" "hiking hiking" "box-1 box-2"; }
 
@@ -374,7 +389,7 @@ footer {
   padding-top: 3.5rem;
   color: #555555;
   font-family: 'Poiret One', cursive;
-  font-size: 5rem;
+  font-size: 3rem;
   text-align: center;
   font-weight: bold;
   letter-spacing: 0.2rem;
@@ -409,7 +424,7 @@ footer {
   padding-top: 3.5rem;
   color: #555555;
   font-family: 'Poiret One', cursive;
-  font-size: 5rem;
+  font-size: 3rem;
   text-align: center;
   font-weight: bold;
   letter-spacing: 0.2rem; }
@@ -483,11 +498,10 @@ footer {
   grid-column: span 2; }
 
 .contact-form {
-  background: linear-gradient(-45deg, rgba(0, 0, 0, 0.9) 50%, rgba(0, 0, 0, 0.8) 50%), url(../images/woods.jpg);
+  background: linear-gradient(-90deg, rgba(0, 0, 0, 0.9) 50%, rgba(0, 0, 0, 0.6) 50%), url(../images/woods.jpg);
   background-size: 100% 42rem; }
 
 .contact {
-  padding: 1rem 2rem;
   color: white;
   font-family: 'Poiret One', cursive;
   font-size: 1.2rem;
@@ -496,7 +510,8 @@ footer {
   grid-template-columns: 60% 40%;
   grid-template-areas: "contact-information contact-form"; }
 
-.detais {
+.details {
+  padding: 3rem;
   display: grid;
   grid-template-columns: 1fr; }
 
@@ -507,48 +522,47 @@ footer {
   grid-area: contact-form; }
 
 .head {
-  padding: 1rem; }
+  padding: 6rem 1rem 1rem 1rem; }
 
 .first-last-name input {
   text-align: center;
   border: 1px solid rgba(255, 255, 255, 0.5);
   outline-style: none;
   padding: 0.6rem;
-  width: 12rem;
   color: white;
   font-family: 'Poiret One', cursive;
   font-size: 1rem;
   letter-spacing: 0.1rem;
-  background: black; }
+  background: black;
+  width: 12rem; }
 .first-last-name [type="text"] {
   text-align: center;
   border: 1px solid rgba(255, 255, 255, 0.5);
   outline-style: none;
   padding: 0.6rem;
-  width: 12rem;
   color: white;
   font-family: 'Poiret One', cursive;
   font-size: 1rem;
   letter-spacing: 0.1rem;
-  background: black; }
+  background: black;
+  width: 12rem; }
 
 .email input {
   text-align: center;
   border: 1px solid rgba(255, 255, 255, 0.5);
   outline-style: none;
   padding: 0.6rem;
-  width: 12rem;
   color: white;
   font-family: 'Poiret One', cursive;
   font-size: 1rem;
   letter-spacing: 0.1rem;
-  background: black; }
+  background: black;
+  width: 12rem; }
 .email select {
   text-align: center;
   border: 1px solid rgba(255, 255, 255, 0.5);
   outline-style: none;
   padding: 0.6rem;
-  width: 12rem;
   color: white;
   font-family: 'Poiret One', cursive;
   font-size: 1rem;
@@ -562,13 +576,13 @@ textarea {
   border: 1px solid rgba(255, 255, 255, 0.5);
   outline-style: none;
   padding: 0.6rem;
-  width: 12rem;
   color: white;
   font-family: 'Poiret One', cursive;
   font-size: 1rem;
   letter-spacing: 0.1rem;
   background: black;
-  text-align: left; }
+  text-align: left;
+  width: 12rem; }
 
 .submit input {
   color: white;
@@ -580,43 +594,134 @@ textarea {
   letter-spacing: 0.1rem;
   width: 13.3rem; }
 
-@media (max-width: 700px) {
+@media (max-width: 1024px) {
+  .navbar {
+    width: 60%;
+    padding: 0rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background: black;
+    transform: skew(-45deg);
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+    position: fixed;
+    margin-left: -2rem;
+    z-index: 2; }
+
+  .navbar ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    transform: skew(45deg); }
+
+  .navbar a {
+    color: rgba(255, 255, 255, 0.65);
+    padding: 0.5rem; }
+
+  .navbar a:hover {
+    color: white;
+    text-shadow: 2px 2px 60px white, -2px -2px 60px white; }
+
+  .dropdown {
+    overflow: hidden; }
+    .dropdown .dropdown .dropbtn {
+      font-size: 16px;
+      border: none;
+      outline: none;
+      color: white;
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0; }
+    .dropdown .dropdown-content {
+      padding-top: 1rem;
+      display: none;
+      position: absolute;
+      width: 27%;
+      height: 0; }
+    .dropdown .dropdown-content a {
+      display: block;
+      border-bottom: 0.3px solid white;
+      background: black;
+      color: white; }
+    .dropdown .dropdown-content a:hover {
+      display: block;
+      border-bottom: 0.3px solid black;
+      background: white;
+      color: black;
+      font-weight: bolder; }
+
+  .dropdown:hover .dropdown-content {
+    display: block; }
+
   .hiking {
-    display: block;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 10rem);
-    grid-template-areas: "intro" "hiking" "box-1" "box-2"; }
+    display: grid;
+    padding: 0 0 4rem 0;
+    margin: 0.5rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "intro intro" "hiking hiking" "box-1 box-2"; }
 
   .activities {
     border-bottom: 2px solid #555555;
-    margin: 1rem;
-    padding-bottom: 4rem;
-    display: block;
+    padding: 0 0 4rem 0;
+    margin: 0.5rem;
+    display: grid;
     grid-gap: 1rem;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "clmb" "box-3" "box-4"; }
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "clmb clmb" "box-3 box-4"; }
+
+  .heading-1 {
+    font-size: 2rem; }
+
+  .headings {
+    font-size: 2rem; }
+
+  .box-1 {
+    margin-top: 1rem;
+    height: 15rem; }
+
+  .box-2 {
+    margin-top: 1rem;
+    height: 15rem; }
 
   .content-1 {
-    margin-top: 1rem; }
+    margin-top: 1rem;
+    height: 15rem; }
 
   .content-2 {
-    margin-top: 1rem; }
+    margin-top: 1rem;
+    height: 15rem; }
 
   .slide {
-    font-size: 1.4rem;
-    padding: 2rem 0 1rem 0;
+    font-size: 1rem;
+    padding: 4rem 0 1rem 0;
     margin: 0;
     text-align: center;
-    text-shadow: 2px 2px 1px black;
+    text-shadow: 2px 2px 2px black;
     color: rgba(199, 199, 199, 0.726);
     font-weight: bold;
     opacity: 1;
     transition: opacity 0.5s ease-out, margin-left 0.5s ease-out; }
 
+  .act-1,
+  .act-2,
+  .act-3,
+  .act-4,
+  .act-5,
+  .act-6,
+  .act-7,
+  .act-8,
+  .act-9,
+  .act-10,
+  .act-11,
+  .act-12 {
+    height: 15rem; }
+
   .info {
     font-size: 0.8rem;
     line-height: 0.9rem;
-    height: 2rem;
+    height: 1rem;
     text-align: center;
     opacity: 0;
     padding: 0 1rem;
@@ -626,12 +731,644 @@ textarea {
   .read-more {
     text-align: center;
     padding: 1rem;
-    margin-top: 5rem;
+    margin-top: 3rem;
     color: #fdfdfd;
-    text-decoration: underline; }
+    text-decoration: underline;
+    font-size: 0.8rem; }
     .read-more a {
       color: #fdfdfd; }
     .read-more a:hover {
-      color: #ffb300; } }
+      color: #ffb300; }
+
+  footer {
+    padding: 0.5rem;
+    margin-top: 6rem; } }
+@media (max-width: 846px) {
+  .main-header {
+    background: linear-gradient(-45deg, rgba(0, 0, 0, 0.9) 50%, rgba(0, 0, 0, 0.8) 50%), url(../images/camping.jpeg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 33rem;
+    color: white; }
+
+  .heading {
+    text-align: center;
+    padding-top: 10rem;
+    font-size: 1.3rem;
+    letter-spacing: 0.2rem; }
+
+  .main-title {
+    padding: 0 1rem 1rem 1rem;
+    border-bottom: 2px solid white; }
+
+  .main-heading {
+    font-family: 'Poiret One', cursive;
+    text-shadow: 5px 10px 3px black, 0 0 5px rgba(255, 255, 255, 0.2); }
+
+  .intro {
+    margin: 4rem 2rem 4rem 2rem;
+    padding: 0 1rem;
+    font-size: 1rem;
+    line-height: 1.5rem; } }
+@media (max-width: 846px) {
+  .navbar {
+    width: 100%;
+    padding: 0rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+    background: black;
+    transform: skew(0deg);
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+    position: fixed;
+    margin-left: 0rem;
+    z-index: 2; }
+
+  .navbar ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    transform: skew(0deg); }
+
+  .navbar a {
+    color: rgba(255, 255, 255, 0.65);
+    padding: 0.5rem; }
+
+  .navbar a:hover {
+    color: white;
+    text-shadow: 2px 2px 60px white, -2px -2px 60px white; }
+
+  .main-header {
+    background: linear-gradient(-45deg, rgba(0, 0, 0, 0.9) 50%, rgba(0, 0, 0, 0.8) 50%), url(../images/camping.jpeg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 33rem;
+    color: white; }
+
+  .heading {
+    text-align: center;
+    padding-top: 10rem;
+    font-size: 1rem;
+    letter-spacing: 0.2rem; }
+
+  .main-title {
+    padding: 0 1rem 1rem 1rem;
+    border-bottom: 2px solid white; }
+
+  .main-heading {
+    font-family: 'Poiret One', cursive;
+    text-shadow: 5px 10px 3px black, 0 0 5px rgba(255, 255, 255, 0.2); }
+
+  .intro {
+    margin: 4rem 2rem 4rem 2rem;
+    padding: 0 1rem;
+    font-size: 1rem;
+    line-height: 1.5rem; } }
+@media only screen and (max-width: 455px) {
+  .navbar {
+    width: 100%;
+    padding: 0rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+    background: black;
+    transform: skew(0deg);
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+    position: fixed;
+    margin-left: 0rem;
+    z-index: 2; }
+
+  .navbar ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    transform: skew(0deg); }
+
+  .navbar a {
+    color: rgba(255, 255, 255, 0.65);
+    padding: 0.5rem; }
+
+  .navbar a:hover {
+    color: white;
+    text-shadow: 2px 2px 60px white, -2px -2px 60px white; }
+
+  .dropdown {
+    overflow: hidden; }
+    .dropdown .dropdown .dropbtn {
+      padding: 0;
+      font-size: 16px;
+      border: none;
+      outline: none;
+      color: white;
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0; }
+    .dropdown .dropdown-content {
+      padding-top: 1rem;
+      display: none;
+      position: absolute;
+      width: 27%;
+      height: 0; }
+    .dropdown .dropdown-content a {
+      display: block;
+      border-bottom: 0.3px solid white;
+      background: black;
+      color: white; }
+    .dropdown .dropdown-content a:hover {
+      display: block;
+      border-bottom: 0.3px solid black;
+      background: white;
+      color: black;
+      font-weight: bolder; }
+    .dropdown .menu {
+      background: black;
+      padding: 0rem;
+      color: white; }
+
+  .dropdown:hover .dropdown-content {
+    display: block; }
+
+  .main-header {
+    background: linear-gradient(-45deg, rgba(0, 0, 0, 0.9) 50%, rgba(0, 0, 0, 0.8) 50%), url(../images/camping.jpeg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 33rem;
+    color: white; }
+
+  .heading {
+    text-align: center;
+    padding-top: 8rem;
+    font-size: 1rem;
+    letter-spacing: 0.2rem; }
+
+  .main-title {
+    font-size: 0.9rem;
+    padding: 0;
+    border-bottom: 0px solid white; }
+
+  .main-heading {
+    font-size: 2rem;
+    font-family: 'Poiret One', cursive;
+    text-shadow: 5px 10px 3px black, 0 0 5px rgba(255, 255, 255, 0.2); }
+
+  .intro {
+    margin: 1rem;
+    padding: 0 0.2rem;
+    font-size: 0.6rem;
+    line-height: 1.2rem; }
+
+  .arrow {
+    width: 4rem;
+    height: 4rem;
+    animation: move 2s linear infinite; }
+
+  .hiking {
+    display: grid;
+    padding: 0 0 4rem 0;
+    margin: 0.5rem;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: "intro" "hiking" "box-1" "box-2"; }
+
+  .activities {
+    border-bottom: 2px solid #555555;
+    padding: 0 0 4rem 0;
+    margin: 0.5rem;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: "clmb" "box-3" "box-4"; }
+
+  .heading-1 {
+    font-size: 2rem; }
+
+  .headings {
+    font-size: 2rem; }
+
+  .box-1 {
+    margin-top: 1rem;
+    height: 15rem; }
+
+  .box-2 {
+    margin-top: 1rem;
+    height: 15rem; }
+
+  .content-1 {
+    margin-top: 1rem;
+    height: 15rem; }
+
+  .content-2 {
+    margin-top: 1rem;
+    height: 15rem; }
+
+  .slide {
+    font-size: 1rem;
+    padding: 4rem 0 1rem 0;
+    margin: 0;
+    text-align: center;
+    text-shadow: 2px 2px 2px black;
+    color: rgba(199, 199, 199, 0.726);
+    font-weight: bold;
+    opacity: 1;
+    transition: opacity 0.5s ease-out, margin-left 0.5s ease-out; }
+
+  .act-1,
+  .act-2,
+  .act-3,
+  .act-4,
+  .act-5,
+  .act-6,
+  .act-7,
+  .act-8,
+  .act-9,
+  .act-10,
+  .act-11,
+  .act-12 {
+    height: 15rem; }
+
+  footer {
+    padding: 0.1rem;
+    margin-top: 6rem; } }
+@media only screen and (max-width: 375px) {
+  .navbar {
+    background: rgba(0, 0, 0, 0.226);
+    transform: skew(0deg);
+    border-bottom: 0px solid white;
+    border-right: 0px solid white;
+    position: static;
+    margin-left: 0rem;
+    z-index: 2; }
+    .navbar ul {
+      padding: 0;
+      list-style: none;
+      text-align: center;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr); }
+    .navbar li {
+      padding: 1rem; }
+
+  .dropdown {
+    overflow: hidden; }
+    .dropdown .dropdown .dropbtn {
+      padding: 0;
+      font-size: 16px;
+      border: none;
+      outline: none;
+      color: white;
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0; }
+    .dropdown .dropdown-content {
+      padding: 0;
+      display: none;
+      position: absolute;
+      width: 30%;
+      height: 0;
+      transform: translate(117%, 50%); }
+    .dropdown .dropdown-content a {
+      display: block;
+      border-bottom: 0.3px solid white;
+      background: black;
+      color: white; }
+    .dropdown .dropdown-content a:hover {
+      display: block;
+      border-bottom: 0.3px solid black;
+      background: white;
+      color: black;
+      font-weight: bolder; }
+    .dropdown .menu {
+      background: white;
+      padding: 1rem 0.7rem;
+      color: black; }
+
+  .dropdown:hover .dropdown-content {
+    display: block; }
+
+  .main-header {
+    background: linear-gradient(-45deg, rgba(0, 0, 0, 0.9) 50%, rgba(0, 0, 0, 0.8) 50%), url(../images/camping.jpeg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 33rem;
+    color: white; }
+
+  .heading {
+    text-align: center;
+    padding-top: 3rem;
+    font-size: 1rem;
+    letter-spacing: 0.2rem; }
+
+  .main-title {
+    font-size: 0.6rem;
+    padding: 0.2rem;
+    border-bottom: 0px solid white; }
+
+  .main-heading {
+    font-size: 1.7rem;
+    font-family: 'Poiret One', cursive;
+    text-shadow: 5px 10px 3px black, 0 0 5px rgba(255, 255, 255, 0.2); }
+
+  .arrow {
+    width: 4rem;
+    height: 4rem;
+    animation: move 2s linear infinite; }
+
+  .intro {
+    margin: 0.4rem;
+    padding: 0 0.2rem;
+    font-size: 0.6rem;
+    line-height: 1.2rem; }
+
+  .hiking {
+    display: grid;
+    padding: 0 0 4rem 0;
+    margin: 0.5rem;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: "intro" "hiking" "box-1" "box-2"; }
+
+  .activities {
+    border-bottom: 2px solid #555555;
+    padding: 0 0 4rem 0;
+    margin: 0.5rem;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: "clmb" "box-3" "box-4"; }
+
+  .heading-1 {
+    font-size: 2rem; }
+
+  .headings {
+    font-size: 2rem; }
+
+  .box-1 {
+    margin-top: 1rem;
+    height: 15rem; }
+
+  .box-2 {
+    margin-top: 1rem;
+    height: 15rem; }
+
+  .content-1 {
+    margin-top: 1rem;
+    height: 15rem; }
+
+  .content-2 {
+    margin-top: 1rem;
+    height: 15rem; }
+
+  .slide {
+    font-size: 1rem;
+    padding: 4rem 0 1rem 0;
+    margin: 0;
+    text-align: center;
+    text-shadow: 2px 2px 2px black;
+    color: rgba(199, 199, 199, 0.726);
+    font-weight: bold;
+    opacity: 1;
+    transition: opacity 0.5s ease-out, margin-left 0.5s ease-out; }
+
+  .act-1,
+  .act-2,
+  .act-3,
+  .act-4,
+  .act-5,
+  .act-6,
+  .act-7,
+  .act-8,
+  .act-9,
+  .act-10,
+  .act-11,
+  .act-12 {
+    height: 15rem; }
+
+  footer {
+    padding: 0.1rem;
+    margin-top: 6rem; } }
+@media only screen and (max-width: 1024px) {
+  .gallery {
+    padding: 0.2rem;
+    display: grid;
+    grid-gap: 0.2rem;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(7, 8rem); }
+
+  .hero {
+    margin-top: 4rem;
+    color: #424242;
+    text-align: center;
+    font-size: 3rem; }
+    .hero h2 {
+      font-size: 2rem;
+      padding: 1rem;
+      margin: 0;
+      border-bottom: 0px solid #424242; }
+
+  .item {
+    box-shadow: 0 0 0px white; } }
+@media only screen and (max-width: 425px) {
+  .gallery {
+    padding: 0.2rem;
+    display: grid;
+    grid-gap: 0.2rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(10, 8rem); }
+
+  .hero {
+    color: #424242;
+    text-align: center;
+    font-size: 3rem; }
+    .hero h2 {
+      font-size: 2rem;
+      padding: 1rem;
+      margin: 0;
+      border-bottom: 0px solid #424242; }
+
+  .item img {
+    width: 100%;
+    height: 100%; }
+
+  .item {
+    box-shadow: 0 0 0px white;
+    transition: box-shadow 1s ease-in-out, opacity 1s ease-out;
+    opacity: 0.8; }
+    .item.item:hover {
+      box-shadow: 0 0 30px white;
+      transition: box-shadow 0.2s ease-in-out, opacity 0.5s ease-out;
+      opacity: 1; }
+
+  .pic-1 {
+    grid-column: span 1;
+    grid-row: span 1; }
+
+  .pic-2 {
+    grid-column: span 2; }
+
+  .pic-7 {
+    grid-column: span 1; }
+
+  .pic-8 {
+    grid-column: span 1; }
+
+  .pic-10 {
+    grid-column: span 2;
+    grid-row: span 1; }
+
+  .pic-11 {
+    grid-column: span 1;
+    grid-row: span 1; }
+
+  .pic-12 {
+    grid-column: span 2; }
+
+  .pic-15 {
+    grid-column: span 1; }
+
+  .pic-16 {
+    grid-column: span 3;
+    grid-row: span 2; }
+
+  .pic-18 {
+    grid-column: span 2; }
+
+  .navbar-gallery {
+    background: black; } }
+@media only screen and (max-width: 1024px) {
+  .head {
+    padding: 6rem 1rem 1rem 1rem; }
+
+  .first-last-name input {
+    margin: 0.5rem 0; }
+
+  .email input {
+    margin: 0.5rem 0; } }
+@media only screen and (max-width: 570px) {
+  .contact-form {
+    background: linear-gradient(-90deg, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0.8) 50%), url(../images/woods.jpg);
+    background-size: 100% 100%; }
+
+  .contact {
+    color: white;
+    font-family: 'Poiret One', cursive;
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "contact-form" "contact-information"; }
+
+  .details {
+    padding-top: 3rem;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    margin: auto; }
+
+  .icon i {
+    text-align: center;
+    font-size: 3rem;
+    padding: 1rem; }
+
+  .icon span {
+    display: none;
+    margin-left: 1rem;
+    opacity: 0;
+    transition: margin-left 1s ease-out, opacity 1s ease-out; }
+
+  .icon:hover span {
+    margin-left: 4rem;
+    opacity: 1;
+    transition: margin-left 0.3s ease-out, opacity 0.3s ease-out; }
+
+  .details {
+    grid-area: contact-information; }
+
+  .contact-form {
+    grid-area: contact-form; }
+
+  .head {
+    padding: 6rem 0 0 0;
+    text-align: center; }
+
+  .cont-form {
+    margin: auto; }
+
+  .first-last-name {
+    display: grid;
+    grid-template-columns: 1fr; }
+    .first-last-name input {
+      text-align: center;
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      outline-style: none;
+      padding: 0.6rem;
+      color: white;
+      font-family: 'Poiret One', cursive;
+      font-size: 1rem;
+      letter-spacing: 0.1rem;
+      background: black;
+      margin: 0.5rem 0; }
+    .first-last-name [type="text"] {
+      text-align: center;
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      outline-style: none;
+      padding: 0.6rem;
+      color: white;
+      font-family: 'Poiret One', cursive;
+      font-size: 1rem;
+      letter-spacing: 0.1rem;
+      background: black; }
+
+  .email {
+    display: grid;
+    grid-template-columns: 1fr; }
+    .email input {
+      text-align: center;
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      outline-style: none;
+      padding: 0.6rem;
+      color: white;
+      font-family: 'Poiret One', cursive;
+      font-size: 1rem;
+      letter-spacing: 0.1rem;
+      background: black; }
+    .email select {
+      text-align: center;
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      outline-style: none;
+      padding: 0.6rem;
+      color: white;
+      font-family: 'Poiret One', cursive;
+      font-size: 1rem;
+      letter-spacing: 0.1rem;
+      background: black;
+      padding: 0.53rem;
+      width: 13.32rem; }
+
+  textarea {
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    outline-style: none;
+    padding: 0.6rem;
+    color: white;
+    font-family: 'Poiret One', cursive;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    background: black;
+    text-align: left; }
+
+  .submit input {
+    color: white;
+    padding: 0.5rem;
+    background: black;
+    border: 1px solid white;
+    font-family: 'Poiret One', cursive;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    width: 13.3rem; } }
 
 /*# sourceMappingURL=main.css.map */

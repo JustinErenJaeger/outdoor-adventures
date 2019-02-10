@@ -1,56 +1,170 @@
+// ______________________________________________________________________________________________________________________________________________________________________________________________________________________HOME PAGE MEDIA QUERIES_______________________________________________________
+
 // RESPONSIVE FOR TABLET
 
-@media (max-width: 700px) {
+@media (max-width: 1024px) {
+
+    .navbar {
+        width: 60%;
+        padding: 0rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        background: rgb(0, 0, 0);
+        transform: skew(-45deg);
+        border-bottom: 1px solid rgb(255, 255, 255);
+        border-right: 1px solid rgb(255, 255, 255);
+        position: fixed;
+        margin-left: -2rem;
+        z-index: 2;
+    }
+    
+    .navbar ul {
+        padding: 0;
+        list-style: none;
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        transform: skew(45deg);
+    }
+    
+    .navbar a {
+        color: rgba(255, 255, 255, 0.65);
+        padding: 0.5rem;
+    }
+    
+    .navbar a:hover {
+        color: rgb(255, 255, 255);
+        text-shadow: 2px 2px 60px rgb(255, 255, 255),
+                    -2px -2px 60px rgb(255, 255, 255);
+    }
+
+    // THIS IS THE STYLES FOR THE DROPDOWN MENU
+
+.dropdown {
+    overflow: hidden;
+
+    .dropdown .dropbtn {
+        font-size: 16px; 
+        border: none;
+        outline: none;
+        color: white;
+        background-color: inherit;
+        font-family: inherit; 
+        margin: 0; 
+    }
+      
+    .dropdown-content {
+        padding-top: 1rem;
+        display: none;
+        position: absolute;
+        width: 27%;
+        height: 0;
+    }
+    
+    .dropdown-content a {
+        display: block;
+        border-bottom: 0.3px solid rgb(255, 255, 255);
+        background: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+    }
+
+    .dropdown-content a:hover {
+        display: block;
+        border-bottom: 0.3px solid rgb(0, 0, 0);
+        background: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        font-weight: bolder;
+    }
+    
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
 
     .hiking {
-        display: block;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(4,10rem);
+        display: grid;
+        padding: 0 0 4rem 0;
+        margin: 0.5rem;
+        grid-template-columns: repeat(2, 1fr);
         grid-template-areas: 
-        "intro"
-        "hiking"
-        "box-1"
-        "box-2";
+        "intro intro"
+        "hiking hiking"
+        "box-1 box-2";
     }
 
     .activities {
         border-bottom: 2px solid rgb(85, 85, 85);
-        margin: 1rem;
-        padding-bottom: 4rem;
-        display: block;
+        padding: 0 0 4rem 0;
+        margin: 0.5rem;
+        display: grid;
         grid-gap: 1rem;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         grid-template-areas: 
-        "clmb"
-        "box-3"
-        "box-4";
+        "clmb clmb"
+        "box-3 box-4";
+    }
+
+    .heading-1 {
+        font-size: 2rem;
+    }
+
+    .headings {
+        font-size: 2rem;
+    }
+
+    .box-1 {
+        margin-top: 1rem;
+        height: 15rem;
+    }
+
+    .box-2 {
+        margin-top: 1rem;
+        height: 15rem;
     }
 
     .content-1 {
         margin-top: 1rem;
+        height: 15rem;
     }
 
     .content-2 {
         margin-top: 1rem;
+        height: 15rem;
     }
 
     .slide {
-        font-size: 1.4rem;
-        padding: 2rem 0 1rem 0;
+        font-size: 1rem;
+        padding: 4rem 0 1rem 0;
         margin: 0; 
         text-align: center;
-        text-shadow: 2px 2px 1px rgb(0, 0, 0);
+        text-shadow: 2px 2px 2px rgb(0, 0, 0);
         color: rgba(199, 199, 199, 0.726);
         font-weight: bold;
         opacity: 1;
         transition: opacity 0.5s ease-out, margin-left 0.5s ease-out;
     }
 
+    .act-1,
+    .act-2,
+    .act-3,
+    .act-4,
+    .act-5,
+    .act-6,
+    .act-7,
+    .act-8,
+    .act-9,
+    .act-10,
+    .act-11,
+    .act-12 {
+        height: 15rem;
+    }
+     
     
     .info {
         font-size: 0.8rem;
         line-height: 0.9rem;
-        height: 2rem;
+        height: 1rem;
         text-align: center;
         opacity: 0;
         padding: 0 1rem;
@@ -61,9 +175,10 @@
     .read-more {
         text-align: center;
         padding: 1rem;
-        margin-top: 5rem;
+        margin-top: 3rem;
         color: rgb(253, 253, 253);
         text-decoration: underline;
+        font-size: 0.8rem;
     
         a {
             color: rgb(253, 253, 253);
@@ -71,6 +186,818 @@
     
         a:hover {
             color: rgb(255, 179, 0);
+        }
+    }
+
+    footer {
+        padding: 0.5rem;
+        margin-top: 6rem;
+    }
+}
+
+@media (max-width: 846px) {
+
+    .main-header {
+        background: linear-gradient(-45deg, rgba(0, 0, 0, 0.9) 50%, rgba(0, 0, 0, 0.8) 50%), url(../images/camping.jpeg);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 33rem;
+        color: rgb(255, 255, 255);
+    }
+
+    .heading {
+        text-align: center;
+        padding-top: 10rem;
+        font-size: 1.3rem;
+        letter-spacing: 0.2rem;
+    }
+    
+    .main-title {
+        padding:0 1rem 1rem 1rem;
+        border-bottom: 2px solid rgb(255, 255, 255);
+    }
+    
+    .main-heading {
+        font-family: 'Poiret One', cursive;
+        text-shadow: 5px 10px 3px rgb(0, 0, 0),
+                     0 0 5px rgba(255, 255, 255, 0.2);
+    }
+     
+    .intro {
+        margin:4rem 2rem 4rem 2rem;
+        padding: 0 1rem;
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+}
+
+@media (max-width: 846px) {
+
+
+    .navbar {
+        width: 100%;
+        padding: 0rem;
+        padding-left: 0rem;
+        padding-right: 0rem;
+        background: rgb(0, 0, 0);
+        transform: skew(0deg);
+        border-bottom: 1px solid rgb(255, 255, 255);
+        border-right: 1px solid rgb(255, 255, 255);
+        position: fixed;
+        margin-left: 0rem;
+        z-index: 2;
+    }
+    
+    .navbar ul {
+        padding: 0;
+        list-style: none;
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        transform: skew(0deg);
+    }
+    
+    .navbar a {
+        color: rgba(255, 255, 255, 0.65);
+        padding: 0.5rem;
+    }
+    
+    .navbar a:hover {
+        color: rgb(255, 255, 255);
+        text-shadow: 2px 2px 60px rgb(255, 255, 255),
+                    -2px -2px 60px rgb(255, 255, 255);
+    }
+
+    .main-header {
+        background: linear-gradient(-45deg, rgba(0, 0, 0, 0.9) 50%, rgba(0, 0, 0, 0.8) 50%), url(../images/camping.jpeg);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 33rem;
+        color: rgb(255, 255, 255);
+    }
+
+    .heading {
+        text-align: center;
+        padding-top: 10rem;
+        font-size: 1rem;
+        letter-spacing: 0.2rem;
+    }
+    
+    .main-title {
+        padding:0 1rem 1rem 1rem;
+        border-bottom: 2px solid rgb(255, 255, 255);
+    }
+    
+    .main-heading {
+        font-family: 'Poiret One', cursive;
+        text-shadow: 5px 10px 3px rgb(0, 0, 0),
+                     0 0 5px rgba(255, 255, 255, 0.2);
+    }
+     
+    .intro {
+        margin:4rem 2rem 4rem 2rem;
+        padding: 0 1rem;
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+}
+
+
+
+
+// RESPONSIVENESS FOR MOBILE
+
+@media only screen and (max-width: 455px) {
+    
+    .navbar {
+        width: 100%;
+        padding: 0rem;
+        padding-left: 0rem;
+        padding-right: 0rem;
+        background: rgb(0, 0, 0);
+        transform: skew(0deg);
+        border-bottom: 1px solid rgb(255, 255, 255);
+        border-right: 1px solid rgb(255, 255, 255);
+        position: fixed;
+        margin-left: 0rem;
+        z-index: 2;
+    }
+    
+    .navbar ul {
+        padding: 0;
+        list-style: none;
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        transform: skew(0deg);
+    }
+    
+    .navbar a {
+        color: rgba(255, 255, 255, 0.65);
+        padding: 0.5rem;
+    }
+    
+    .navbar a:hover {
+        color: rgb(255, 255, 255);
+        text-shadow: 2px 2px 60px rgb(255, 255, 255),
+                    -2px -2px 60px rgb(255, 255, 255);
+    }
+
+    .dropdown {
+        overflow: hidden;
+    
+        .dropdown .dropbtn {
+            padding: 0;
+            font-size: 16px; 
+            border: none;
+            outline: none;
+            color: white;
+            background-color: inherit;
+            font-family: inherit; 
+            margin: 0; 
+        }
+          
+        .dropdown-content {
+            padding-top: 1rem;
+            display: none;
+            position: absolute;
+            width: 27%;
+            height: 0;
+        }
+        
+        .dropdown-content a {
+            display: block;
+            border-bottom: 0.3px solid rgb(255, 255, 255);
+            background: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+        }
+    
+        .dropdown-content a:hover {
+            display: block;
+            border-bottom: 0.3px solid rgb(0, 0, 0);
+            background: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            font-weight: bolder;
+        }
+
+        .menu {
+            background: rgb(0, 0, 0);
+            padding: 0rem;
+            color: rgb(255, 255, 255)
+        }
+        
+    }
+      
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .main-header {
+        background: linear-gradient(-45deg, rgba(0, 0, 0, 0.9) 50%, rgba(0, 0, 0, 0.8) 50%), url(../images/camping.jpeg);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 33rem;
+        color: rgb(255, 255, 255);
+    }
+
+    .heading {
+        text-align: center;
+        padding-top: 8rem;
+        font-size: 1rem;
+        letter-spacing: 0.2rem;
+    }
+    
+    .main-title {
+        font-size: 0.9rem;
+        padding: 0;
+        border-bottom: 0px solid rgb(255, 255, 255);
+    }
+    
+    .main-heading {
+        font-size: 2rem;
+        font-family: 'Poiret One', cursive;
+        text-shadow: 5px 10px 3px rgb(0, 0, 0),
+                     0 0 5px rgba(255, 255, 255, 0.2);
+    }
+     
+    .intro {
+        margin: 1rem;
+        padding: 0 0.2rem;
+        font-size: 0.6rem;
+        line-height: 1.2rem;
+    }
+
+    .arrow {
+        width: 4rem;
+        height: 4rem;
+        animation: move 2s linear infinite;
+    }
+
+    .hiking {
+        display: grid;
+        padding: 0 0 4rem 0;
+        margin: 0.5rem;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: 
+        "intro"
+        "hiking"
+        "box-1"
+        "box-2";
+    }
+
+    .activities {
+        border-bottom: 2px solid rgb(85, 85, 85);
+        padding: 0 0 4rem 0;
+        margin: 0.5rem;
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: 
+        "clmb"
+        "box-3"
+        "box-4";
+    }
+
+    .heading-1 {
+        font-size: 2rem;
+    }
+
+    .headings {
+        font-size: 2rem;
+    }
+
+    .box-1 {
+        margin-top: 1rem;
+        height: 15rem;
+    }
+
+    .box-2 {
+        margin-top: 1rem;
+        height: 15rem;
+    }
+
+    .content-1 {
+        margin-top: 1rem;
+        height: 15rem;
+    }
+
+    .content-2 {
+        margin-top: 1rem;
+        height: 15rem;
+    }
+
+    .slide {
+        font-size: 1rem;
+        padding: 4rem 0 1rem 0;
+        margin: 0; 
+        text-align: center;
+        text-shadow: 2px 2px 2px rgb(0, 0, 0);
+        color: rgba(199, 199, 199, 0.726);
+        font-weight: bold;
+        opacity: 1;
+        transition: opacity 0.5s ease-out, margin-left 0.5s ease-out;
+    }
+    .act-1,
+    .act-2,
+    .act-3,
+    .act-4,
+    .act-5,
+    .act-6,
+    .act-7,
+    .act-8,
+    .act-9,
+    .act-10,
+    .act-11,
+    .act-12 {
+        height: 15rem;
+    }
+
+    footer {
+        padding: 0.1rem;
+        margin-top: 6rem;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 375px) {
+    
+    .navbar {
+
+        background: rgba(0, 0, 0, 0.226);
+        transform: skew(0deg);
+        border-bottom: 0px solid rgb(255, 255, 255);
+        border-right: 0px solid rgb(255, 255, 255);
+        position: static;
+        margin-left: 0rem;
+        z-index: 2;
+
+        ul {
+            padding: 0;
+            list-style: none;
+            text-align: center;
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+        }
+
+        li {
+            padding: 1rem;
+        }
+    }
+
+
+    .dropdown {
+        overflow: hidden;
+    
+        .dropdown .dropbtn {
+            padding: 0;
+            font-size: 16px; 
+            border: none;
+            outline: none;
+            color: white;
+            background-color: inherit;
+            font-family: inherit; 
+            margin: 0; 
+        }
+          
+        .dropdown-content {
+            padding: 0;
+            display: none;
+            position: absolute;
+            width: 30%;
+            height: 0;
+            transform: translate(117%, 50%);
+        }
+        
+        .dropdown-content a {
+            display: block;
+            border-bottom: 0.3px solid rgb(255, 255, 255);
+            background: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+        }
+    
+        .dropdown-content a:hover {
+            display: block;
+            border-bottom: 0.3px solid rgb(0, 0, 0);
+            background: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            font-weight: bolder;
+        }
+
+        .menu {
+            background: rgb(255, 255, 255);
+            padding: 1rem 0.7rem;
+            color: rgb(0, 0, 0);
+        }
+        
+    }
+      
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .main-header {
+        background: linear-gradient(-45deg, rgba(0, 0, 0, 0.9) 50%, rgba(0, 0, 0, 0.8) 50%), url(../images/camping.jpeg);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 33rem;
+        color: rgb(255, 255, 255);
+    }
+
+    .heading {
+        text-align: center;
+        padding-top: 3rem;
+        font-size: 1rem;
+        letter-spacing: 0.2rem;
+    }
+    
+    .main-title {
+        font-size: 0.6rem;
+        padding: 0.2rem;
+        border-bottom: 0px solid rgb(255, 255, 255);
+    }
+    
+    .main-heading {
+        font-size: 1.7rem;
+        font-family: 'Poiret One', cursive;
+        text-shadow: 5px 10px 3px rgb(0, 0, 0),
+                     0 0 5px rgba(255, 255, 255, 0.2);
+    }
+
+    .arrow {
+        width: 4rem;
+        height: 4rem;
+        animation: move 2s linear infinite;
+    }
+     
+    .intro {
+        margin: 0.4rem;
+        padding: 0 0.2rem;
+        font-size: 0.6rem;
+        line-height: 1.2rem;
+    }
+
+
+    .hiking {
+        display: grid;
+        padding: 0 0 4rem 0;
+        margin: 0.5rem;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: 
+        "intro"
+        "hiking"
+        "box-1"
+        "box-2";
+    }
+
+    .activities {
+        border-bottom: 2px solid rgb(85, 85, 85);
+        padding: 0 0 4rem 0;
+        margin: 0.5rem;
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: 
+        "clmb"
+        "box-3"
+        "box-4";
+    }
+
+    .heading-1 {
+        font-size: 2rem;
+    }
+
+    .headings {
+        font-size: 2rem;
+    }
+
+    .box-1 {
+        margin-top: 1rem;
+        height: 15rem;
+    }
+
+    .box-2 {
+        margin-top: 1rem;
+        height: 15rem;
+    }
+
+    .content-1 {
+        margin-top: 1rem;
+        height: 15rem;
+    }
+
+    .content-2 {
+        margin-top: 1rem;
+        height: 15rem;
+    }
+
+    .slide {
+        font-size: 1rem;
+        padding: 4rem 0 1rem 0;
+        margin: 0; 
+        text-align: center;
+        text-shadow: 2px 2px 2px rgb(0, 0, 0);
+        color: rgba(199, 199, 199, 0.726);
+        font-weight: bold;
+        opacity: 1;
+        transition: opacity 0.5s ease-out, margin-left 0.5s ease-out;
+    }
+    .act-1,
+    .act-2,
+    .act-3,
+    .act-4,
+    .act-5,
+    .act-6,
+    .act-7,
+    .act-8,
+    .act-9,
+    .act-10,
+    .act-11,
+    .act-12 {
+        height: 15rem;
+    }
+
+    footer {
+        padding: 0.1rem;
+        margin-top: 6rem;
+    }
+}
+
+
+// ___________________________________________________________________________________________________________________________________________________________________________________________________________________GALLERY MEDIA QUERIES________________________________________________________
+
+
+@media only screen and (max-width: 1024px) {
+
+    // THIS IS THE STYLES FOR THE GALLERY
+
+    .gallery {
+        padding: 0.2rem;
+        display: grid;
+        grid-gap: 0.2rem;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(7, 8rem);
+    }
+
+    .hero {
+        margin-top: 4rem;
+        color: rgb(66, 66, 66);
+        text-align: center;
+        font-size: 3rem;
+    
+        h2 {
+            font-size: 2rem;
+            padding: 1rem;
+            margin: 0;
+            border-bottom: 0px solid rgb(66, 66, 66);
+        }
+    }
+
+    .item {
+        box-shadow: 0 0 0px rgb(255, 255, 255);
+    }
+
+}
+
+
+@media only screen and (max-width: 425px) {
+
+    // THIS IS THE STYLES FOR THE GALLERY
+
+    .gallery {
+        padding: 0.2rem;
+        display: grid;
+        grid-gap: 0.2rem;
+        grid-template-columns: repeat( 3, 1fr);
+        grid-template-rows: repeat( 10, 8rem);
+    }
+
+    .hero {
+        color: rgb(66, 66, 66);
+        text-align: center;
+        font-size: 3rem;
+    
+        h2 {
+            font-size: 2rem;
+            padding: 1rem;
+            margin: 0;
+            border-bottom: 0px solid rgb(66, 66, 66);
+        }
+    }
+
+    .item img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .item {
+        box-shadow: 0 0 0px rgb(255, 255, 255);
+        transition: box-shadow 1s ease-in-out, opacity 1s ease-out;
+        opacity: 0.8;
+
+        &.item:hover {
+            box-shadow: 0 0 30px rgb(255, 255, 255);
+            transition: box-shadow 0.2s ease-in-out, opacity 0.5s ease-out;
+            opacity: 1;
+        }
+    }
+
+    .pic-1 {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    
+    .pic-2 {
+        grid-column: span 2;
+    }
+    
+    .pic-7 {
+        grid-column: span 1;
+    }
+    
+    .pic-8 {
+        grid-column: span 1;
+    }
+    
+    .pic-10 {
+        grid-column: span 2;
+        grid-row: span 1;
+    }
+    
+    .pic-11 {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .pic-12 {
+        grid-column: span 2;
+    }
+    
+    .pic-15 {
+        grid-column: span 1;
+    }
+    
+    .pic-16 {
+        grid-column: span 3;
+        grid-row: span 2;   
+    }
+    
+    .pic-18 {
+        grid-column: span 2;
+    }
+
+    .navbar-gallery {
+        background: rgb(0, 0, 0);
+    }
+
+}
+
+
+// ___________________________________________________________________________________________________________________________________________________________________________________CONTACT PAGE MEDIA QUERIES___________________________________________
+
+
+@media only screen and (max-width: 1024px) {
+    // THIS IS THE INFO FOR THE CONTACT FORM
+
+    .head {
+        padding: 6rem 1rem 1rem 1rem;
+    }
+
+    .first-last-name {
+        
+        input {
+            margin: 0.5rem 0;
+        }
+    }
+
+    .email {
+
+        input {
+            margin: 0.5rem 0;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 570px) {
+    // THIS IS THE INFO FOR THE CONTACT FORM
+
+    .contact-form {
+        background: linear-gradient( -90deg, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0.8) 50%), url(../images/woods.jpg);
+        background-size: 100% 100%;
+    }
+
+    .contact {
+        color: rgb(255, 255, 255);
+        font-family: 'Poiret One', cursive;
+        font-size: 1.2rem;
+        letter-spacing: 0.1rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        'contact-form'
+        'contact-information'
+    }
+
+    .details {
+        padding-top: 3rem;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        margin: auto;
+    }
+
+
+    // THIS IS THE STYLES FOR THE CONTACT FORM
+
+    .icon i {
+        text-align: center;
+        font-size: 3rem;
+        padding: 1rem;
+    }
+
+    .icon span {
+        display: none;
+        margin-left: 1rem;
+        opacity: 0;
+        transition: margin-left 1s ease-out, opacity 1s ease-out;
+    }
+
+    .icon:hover span {
+        margin-left: 4rem;
+        opacity: 1;
+        transition: margin-left 0.3s ease-out, opacity 0.3s ease-out;
+    }
+
+    .details {
+        grid-area: contact-information;
+    }
+
+    .contact-form {
+        grid-area: contact-form;
+    }
+
+    .head {
+        padding: 6rem 0 0 0;
+        text-align: center;
+    }
+
+    .cont-form {
+        margin: auto;
+    }
+
+    .first-last-name {
+
+        display: grid;
+        grid-template-columns: 1fr;
+
+        input {
+            @include inputs;
+            margin: 0.5rem 0;
+        }
+
+        [type="text"] {
+            @include inputs;
+        }
+    }
+
+    .email {
+
+        display: grid; 
+        grid-template-columns: 1fr;
+
+        input {
+            @include inputs;
+        }
+
+        select {
+            @include inputs;
+            padding: 0.53rem;
+            width: 13.32rem;
+        }
+    }
+
+    textarea {
+        @include inputs;
+        text-align: left;
+    }
+
+    .submit {
+        
+        input {
+            color: rgb(255, 255, 255);
+            padding: 0.5rem;
+            background: rgb(0, 0, 0);
+            border: 1px solid rgb(255, 255, 255);
+            font-family: 'Poiret One', cursive;
+            font-size: 1rem;
+            letter-spacing: 0.1rem;
+            width: 13.3rem;
         }
     }
 }

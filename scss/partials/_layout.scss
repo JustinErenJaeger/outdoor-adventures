@@ -1,9 +1,8 @@
 .hiking {
     border-bottom: 2px solid rgb(85, 85, 85);
-    padding: 1rem;
     padding-bottom: 4rem;
     display: grid;
-    grid-gap: 2rem;
+    grid-gap: 1rem;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: 
     "intro intro"
@@ -75,7 +74,6 @@
     grid-area: box-4; 
     @include text;
 }
-
 
 
 
@@ -154,12 +152,11 @@
 // THIS IS THE INFO FOR THE CONTACT FORM
 
 .contact-form {
-    background: linear-gradient(-45deg, rgba(0, 0, 0, 0.9) 50%, rgba(0, 0, 0, 0.8) 50%), url(../images/woods.jpg);
+    background: linear-gradient( -90deg, rgba(0, 0, 0, 0.9) 50%, rgba(0, 0, 0, 0.6) 50%), url(../images/woods.jpg);
     background-size: 100% 42rem;
 }
 
 .contact {
-    padding: 1rem 2rem;
     color: rgb(255, 255, 255);
     font-family: 'Poiret One', cursive;
     font-size: 1.2rem;
@@ -170,7 +167,8 @@
     'contact-information contact-form'
 }
 
-.detais {
+.details {
+    padding: 3rem;
     display: grid;
     grid-template-columns: 1fr;
 }
@@ -185,17 +183,19 @@
 }
 
 .head {
-    padding: 1rem;
+    padding: 6rem 1rem 1rem 1rem;
 }
 
 .first-last-name {
     
     input {
         @include inputs;
+        width: 12rem;
     }
 
     [type="text"] {
         @include inputs;
+        width: 12rem;
     }
 }
 
@@ -203,6 +203,7 @@
 
     input {
         @include inputs;
+        width: 12rem;
     }
 
     select {
@@ -215,6 +216,7 @@
 textarea {
     @include inputs;
     text-align: left;
+    width: 12rem;
 }
 
 .submit {
