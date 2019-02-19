@@ -15,7 +15,8 @@
   list-style: none;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  transform: skew(45deg); }
+  transform: skew(45deg);
+  padding: 0.3rem; }
 
 .navbar a {
   text-decoration: none;
@@ -348,19 +349,7 @@ footer {
   text-align: center;
   background: black;
   border-top: 2px solid white;
-  padding: 2rem;
-  margin-top: 6rem; }
-
-.hero {
-  margin-top: 4rem;
-  color: #424242;
-  height: 6rem;
-  text-align: center;
-  font-size: 2rem;
-  font-family: 'Poiret One', cursive; }
-  .hero h2 {
-    padding: 1rem;
-    border-bottom: 2px solid #424242; }
+  padding: 2rem; }
 
 .hiking {
   border-bottom: 2px solid #555555;
@@ -372,7 +361,7 @@ footer {
 
 .intro {
   grid-area: intro;
-  margin: 10rem 2rem 10rem 2rem;
+  margin: 10rem 2rem 5rem 2rem;
   padding: 0 2rem;
   font-family: 'Poiret One', cursive;
   font-family: 'Poiret One' cursive;
@@ -386,7 +375,7 @@ footer {
   border-right: 2px solid #555555; }
 
 .heading-1 {
-  padding-top: 3.5rem;
+  margin-top: 0;
   color: #555555;
   font-family: 'Poiret One', cursive;
   font-size: 3rem;
@@ -421,7 +410,7 @@ footer {
 
 .headings {
   grid-area: clmb;
-  padding-top: 3.5rem;
+  margin-top: 0;
   color: #555555;
   font-family: 'Poiret One', cursive;
   font-size: 3rem;
@@ -446,7 +435,7 @@ footer {
   line-height: 1.6rem; }
 
 .gallery {
-  padding: 4rem;
+  padding: 8rem 2rem 2rem 2rem;
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: repeat(6, 1fr);
@@ -582,7 +571,7 @@ textarea {
   letter-spacing: 0.1rem;
   background: black;
   text-align: left;
-  width: 12rem; }
+  width: 25.8rem; }
 
 .submit input {
   color: white;
@@ -1153,42 +1142,24 @@ textarea {
     margin-top: 6rem; } }
 @media only screen and (max-width: 1024px) {
   .gallery {
-    padding: 0.2rem;
+    padding: 8rem 2rem 2rem 2rem;
     display: grid;
     grid-gap: 0.2rem;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(7, 8rem); }
 
-  .hero {
-    margin-top: 4rem;
-    color: #424242;
-    text-align: center;
-    font-size: 3rem; }
-    .hero h2 {
-      font-size: 2rem;
-      padding: 1rem;
-      margin: 0;
-      border-bottom: 0px solid #424242; }
-
   .item {
-    box-shadow: 0 0 0px white; } }
+    box-shadow: 0 0 0px white; }
+
+  footer {
+    margin: 0; } }
 @media only screen and (max-width: 425px) {
   .gallery {
-    padding: 0.2rem;
+    padding: 1rem 0.2rem 2rem 0.2rem;
     display: grid;
     grid-gap: 0.2rem;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(10, 8rem); }
-
-  .hero {
-    color: #424242;
-    text-align: center;
-    font-size: 3rem; }
-    .hero h2 {
-      font-size: 2rem;
-      padding: 1rem;
-      margin: 0;
-      border-bottom: 0px solid #424242; }
 
   .item img {
     width: 100%;
@@ -1202,6 +1173,10 @@ textarea {
       box-shadow: 0 0 30px white;
       transition: box-shadow 0.2s ease-in-out, opacity 0.5s ease-out;
       opacity: 1; }
+
+  .navbar ul {
+    margin: 0;
+    padding: 1rem; }
 
   .pic-1 {
     grid-column: span 1;
@@ -1247,11 +1222,14 @@ textarea {
     margin: 0.5rem 0; }
 
   .email input {
-    margin: 0.5rem 0; } }
+    margin: 0.5rem 0; }
+
+  textarea {
+    width: 12em; } }
 @media only screen and (max-width: 570px) {
   .contact-form {
     background: linear-gradient(-90deg, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0.8) 50%), url(../images/woods.jpg);
-    background-size: 100% 100%; }
+    background-size: cover; }
 
   .contact {
     color: white;
@@ -1359,7 +1337,8 @@ textarea {
     font-size: 1rem;
     letter-spacing: 0.1rem;
     background: black;
-    text-align: left; }
+    text-align: left;
+    width: 12rem; }
 
   .submit input {
     color: white;

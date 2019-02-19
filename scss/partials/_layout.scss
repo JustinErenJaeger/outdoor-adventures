@@ -14,7 +14,7 @@
 
 .intro {
     grid-area: intro;
-    margin: 10rem 2rem 10rem 2rem;
+    margin: 10rem 2rem 5rem 2rem;
     padding: 0 2rem;
     font-family: 'Poiret One', cursive;
     font-family: 'Poiret One' cursive;
@@ -80,7 +80,7 @@
 // THIS IS THE STYLES FOR THE GALLERY
 
 .gallery {
-    padding: 4rem;
+    padding: 8rem 2rem 2rem 2rem;
     display: grid;
     grid-gap: 1rem;
     grid-template-columns: repeat(6, 1fr);
@@ -216,7 +216,7 @@
 textarea {
     @include inputs;
     text-align: left;
-    width: 12rem;
+    width: 25.8rem;
 }
 
 .submit {

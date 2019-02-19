@@ -737,29 +737,19 @@
     // THIS IS THE STYLES FOR THE GALLERY
 
     .gallery {
-        padding: 0.2rem;
+        padding: 8rem 2rem 2rem 2rem;
         display: grid;
         grid-gap: 0.2rem;
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: repeat(7, 8rem);
     }
 
-    .hero {
-        margin-top: 4rem;
-        color: rgb(66, 66, 66);
-        text-align: center;
-        font-size: 3rem;
-    
-        h2 {
-            font-size: 2rem;
-            padding: 1rem;
-            margin: 0;
-            border-bottom: 0px solid rgb(66, 66, 66);
-        }
-    }
-
     .item {
         box-shadow: 0 0 0px rgb(255, 255, 255);
+    }
+
+    footer {
+        margin: 0;
     }
 
 }
@@ -770,24 +760,11 @@
     // THIS IS THE STYLES FOR THE GALLERY
 
     .gallery {
-        padding: 0.2rem;
+        padding: 1rem 0.2rem 2rem 0.2rem;
         display: grid;
         grid-gap: 0.2rem;
         grid-template-columns: repeat( 3, 1fr);
         grid-template-rows: repeat( 10, 8rem);
-    }
-
-    .hero {
-        color: rgb(66, 66, 66);
-        text-align: center;
-        font-size: 3rem;
-    
-        h2 {
-            font-size: 2rem;
-            padding: 1rem;
-            margin: 0;
-            border-bottom: 0px solid rgb(66, 66, 66);
-        }
     }
 
     .item img {
@@ -805,6 +782,11 @@
             transition: box-shadow 0.2s ease-in-out, opacity 0.5s ease-out;
             opacity: 1;
         }
+    }
+
+    .navbar ul {
+        margin: 0;
+        padding: 1rem;
     }
 
     .pic-1 {
@@ -858,7 +840,7 @@
 }
 
 
-// ___________________________________________________________________________________________________________________________________________________________________________________CONTACT PAGE MEDIA QUERIES___________________________________________
+// _________________________________________________________________________________________________________________________________________________________________________________________________________________________CONTACT PAGE MEDIA QUERIES_____________________________________________________________________________________________________________
 
 
 @media only screen and (max-width: 1024px) {
@@ -881,6 +863,10 @@
             margin: 0.5rem 0;
         }
     }
+
+    textarea {
+        width: 12em;
+    }
 }
 
 
@@ -889,7 +875,7 @@
 
     .contact-form {
         background: linear-gradient( -90deg, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0.8) 50%), url(../images/woods.jpg);
-        background-size: 100% 100%;
+        background-size: cover;
     }
 
     .contact {
@@ -985,6 +971,7 @@
     textarea {
         @include inputs;
         text-align: left;
+        width: 12rem;
     }
 
     .submit {
