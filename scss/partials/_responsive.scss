@@ -1,4 +1,4 @@
-// ______________________________________________________________________________________________________________________________________________________________________________________________________________________HOME PAGE MEDIA QUERIES_______________________________________________________
+// __________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________HOME PAGE MEDIA QUERIES_______________________________________________________
 
 // RESPONSIVE FOR TABLET
 
@@ -521,34 +521,38 @@
     }
 }
 
-
-
-
 @media only screen and (max-width: 375px) {
+
+    .home-page {
+        #navbar.toggle {
+            top: 0;
+        }
     
-    .navbar {
-
-        background: rgba(0, 0, 0, 0.226);
-        transform: skew(0deg);
-        border-bottom: 0px solid rgb(255, 255, 255);
-        border-right: 0px solid rgb(255, 255, 255);
-        position: static;
-        margin-left: 0rem;
-        z-index: 2;
-
-        ul {
-            padding: 0;
-            list-style: none;
-            text-align: center;
-            display: grid;
-            grid-template-columns: repeat(1,1fr);
+        #navbrar-toggle {
+            display: initial;
         }
 
-        li {
-            padding: 1rem;
+        .navbar {
+
+            background: rgb(0, 0, 0);
+            position: fixed;
+            padding-bottom: 1rem;
+            top: -12rem;
+            transition: all 0.5s ease-in-out;
+    
+            ul {
+                padding: 0;
+                list-style: none;
+                text-align: center;
+                display: grid;
+                grid-template-columns: repeat(1,1fr);
+            }
+    
+            li {
+                padding: 1rem;
+            }
         }
     }
-
 
     .dropdown {
         overflow: hidden;
@@ -762,8 +766,8 @@
     .gallery {
         padding: 1rem 0.2rem 2rem 0.2rem;
         display: grid;
-        grid-gap: 0.2rem;
-        grid-template-columns: repeat( 3, 1fr);
+        grid-gap: 0;
+        grid-template-columns: repeat( 1, 1fr);
         grid-template-rows: repeat( 10, 8rem);
     }
 
@@ -795,7 +799,7 @@
     }
     
     .pic-2 {
-        grid-column: span 2;
+        grid-column: span 1;
     }
     
     .pic-7 {
@@ -807,7 +811,7 @@
     }
     
     .pic-10 {
-        grid-column: span 2;
+        grid-column: span 1;
         grid-row: span 1;
     }
     
@@ -817,7 +821,7 @@
     }
 
     .pic-12 {
-        grid-column: span 2;
+        grid-column: span 1;
     }
     
     .pic-15 {
@@ -825,20 +829,18 @@
     }
     
     .pic-16 {
-        grid-column: span 3;
-        grid-row: span 2;   
+        grid-column: span 1;
+        grid-row: span 1;   
     }
     
     .pic-18 {
-        grid-column: span 2;
+        grid-column: span 1;
     }
 
     .navbar-gallery {
         background: rgb(0, 0, 0);
     }
-
 }
-
 
 // _________________________________________________________________________________________________________________________________________________________________________________________________________________________CONTACT PAGE MEDIA QUERIES_____________________________________________________________________________________________________________
 
@@ -902,9 +904,7 @@
     // THIS IS THE STYLES FOR THE CONTACT FORM
 
     .icon i {
-        text-align: center;
-        font-size: 3rem;
-        padding: 1rem;
+        display: none;
     }
 
     .icon span {
@@ -988,3 +988,39 @@
         }
     }
 }
+
+@media only screen and (max-width: 375px) {
+
+    .contact-form {
+           // THIS IS THE INFO FOR THE CONTACT FORM
+        .navbar {
+            background: rgb(0, 0, 0);
+            position: fixed;
+            padding-bottom: 1rem;
+            top: -13rem;
+            transition: all 0.5s ease-in-out;
+
+            ul {
+                padding: 0;
+                list-style: none;
+                text-align: center;
+                display: grid;
+                grid-template-columns: repeat(1,1fr);
+            }
+    
+            li {
+                padding: 1rem;
+            }
+        }
+
+        .navbar.active {
+            top: 0;
+        }
+
+        .navbar-toggle {
+            display: initial;
+        }
+    }
+}
+
+

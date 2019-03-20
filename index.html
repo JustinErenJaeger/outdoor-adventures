@@ -8,11 +8,15 @@
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Poiret+One" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
-<body>
+<body class="home-page">
     <div class="wrapper">
+        <div class="navbar-toggle" onclick="navContactToggle()">
+            <i class="fas fa-ellipsis-h"></i>
+        </div>
         <header class="main-header">
-            <nav class="navbar">
+            <nav class="navbar" id="navbar">
                 <ul>
                     <li>
                         <a class="active" href="#">home</a>
@@ -230,15 +234,12 @@
                
             </div>  
         </main>
-
-
-
-
         <!-- THIS IS THE FOOTER -->
-
         <footer>
             <p>&copy;2019 Justin Creighton</p>
         </footer>
     </div>
+
+    <script src="js/main.js"></script>
 </body>
 </html>

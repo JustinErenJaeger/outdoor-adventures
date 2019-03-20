@@ -2,6 +2,8 @@
     border-bottom: 2px solid rgb(85, 85, 85);
     padding-bottom: 4rem;
     display: grid;
+    margin-left: 4rem;
+    margin-right: 4rem;
     grid-gap: 1rem;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: 
@@ -149,11 +151,11 @@
 
 
 
-// THIS IS THE INFO FOR THE CONTACT FORM
+// THIS IS THE STYLES FOR THE CONTACT FORM
 
 .contact-form {
     background: linear-gradient( -90deg, rgba(0, 0, 0, 0.9) 50%, rgba(0, 0, 0, 0.6) 50%), url(../images/woods.jpg);
-    background-size: 100% 42rem;
+    background-size: 100% 100%;
 }
 
 .contact {
@@ -162,6 +164,7 @@
     font-size: 1.2rem;
     letter-spacing: 0.1rem;
     display: grid;
+    height: auto;
     grid-template-columns: 60% 40%;
     grid-template-areas: 
     'contact-information contact-form'

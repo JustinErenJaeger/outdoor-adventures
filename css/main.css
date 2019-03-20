@@ -72,6 +72,15 @@
   animation: fade 2s ease infinite;
   font-family: 'Poiret One', cursive; }
 
+.navbar-toggle {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1000; }
+  .navbar-toggle i {
+    color: #fdfdfd;
+    font-size: 1.5rem; }
+
 @keyframes fade {
   0% {
     opacity: 1; }
@@ -309,7 +318,8 @@
   font-family: 'Poiret One';
   src: url(../fonts/PoiretOne-Regular.ttf); }
 html {
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+  height: 100vh; }
 
 body {
   margin: 0;
@@ -317,7 +327,7 @@ body {
 
 .wrapper {
   width: 100%;
-  overflow-x: hidden; }
+  overflow: hidden; }
 
 .main-header {
   background: linear-gradient(-45deg, rgba(0, 0, 0, 0.9) 50%, rgba(0, 0, 0, 0.8) 50%), url(../images/camping.jpeg);
@@ -349,12 +359,15 @@ footer {
   text-align: center;
   background: black;
   border-top: 2px solid white;
-  padding: 2rem; }
+  padding: 1rem;
+  margin-top: 8.5rem; }
 
 .hiking {
   border-bottom: 2px solid #555555;
   padding-bottom: 4rem;
   display: grid;
+  margin-left: 4rem;
+  margin-right: 4rem;
   grid-gap: 1rem;
   grid-template-columns: repeat(2, 1fr);
   grid-template-areas: "intro intro" "hiking hiking" "box-1 box-2"; }
@@ -488,7 +501,7 @@ footer {
 
 .contact-form {
   background: linear-gradient(-90deg, rgba(0, 0, 0, 0.9) 50%, rgba(0, 0, 0, 0.6) 50%), url(../images/woods.jpg);
-  background-size: 100% 42rem; }
+  background-size: 100% 100%; }
 
 .contact {
   color: white;
@@ -496,6 +509,7 @@ footer {
   font-size: 1.2rem;
   letter-spacing: 0.1rem;
   display: grid;
+  height: auto;
   grid-template-columns: 60% 40%;
   grid-template-areas: "contact-information contact-form"; }
 
@@ -985,21 +999,23 @@ textarea {
     padding: 0.1rem;
     margin-top: 6rem; } }
 @media only screen and (max-width: 375px) {
-  .navbar {
-    background: rgba(0, 0, 0, 0.226);
-    transform: skew(0deg);
-    border-bottom: 0px solid white;
-    border-right: 0px solid white;
-    position: static;
-    margin-left: 0rem;
-    z-index: 2; }
-    .navbar ul {
+  .home-page #navbar.toggle {
+    top: 0; }
+  .home-page #navbrar-toggle {
+    display: initial; }
+  .home-page .navbar {
+    background: black;
+    position: fixed;
+    padding-bottom: 1rem;
+    top: -12rem;
+    transition: all 0.5s ease-in-out; }
+    .home-page .navbar ul {
       padding: 0;
       list-style: none;
       text-align: center;
       display: grid;
       grid-template-columns: repeat(1, 1fr); }
-    .navbar li {
+    .home-page .navbar li {
       padding: 1rem; }
 
   .dropdown {
@@ -1157,8 +1173,8 @@ textarea {
   .gallery {
     padding: 1rem 0.2rem 2rem 0.2rem;
     display: grid;
-    grid-gap: 0.2rem;
-    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0;
+    grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(10, 8rem); }
 
   .item img {
@@ -1183,7 +1199,7 @@ textarea {
     grid-row: span 1; }
 
   .pic-2 {
-    grid-column: span 2; }
+    grid-column: span 1; }
 
   .pic-7 {
     grid-column: span 1; }
@@ -1192,7 +1208,7 @@ textarea {
     grid-column: span 1; }
 
   .pic-10 {
-    grid-column: span 2;
+    grid-column: span 1;
     grid-row: span 1; }
 
   .pic-11 {
@@ -1200,17 +1216,17 @@ textarea {
     grid-row: span 1; }
 
   .pic-12 {
-    grid-column: span 2; }
+    grid-column: span 1; }
 
   .pic-15 {
     grid-column: span 1; }
 
   .pic-16 {
-    grid-column: span 3;
-    grid-row: span 2; }
+    grid-column: span 1;
+    grid-row: span 1; }
 
   .pic-18 {
-    grid-column: span 2; }
+    grid-column: span 1; }
 
   .navbar-gallery {
     background: black; } }
@@ -1248,9 +1264,7 @@ textarea {
     margin: auto; }
 
   .icon i {
-    text-align: center;
-    font-size: 3rem;
-    padding: 1rem; }
+    display: none; }
 
   .icon span {
     display: none;
@@ -1349,5 +1363,24 @@ textarea {
     font-size: 1rem;
     letter-spacing: 0.1rem;
     width: 13.3rem; } }
+@media only screen and (max-width: 375px) {
+  .contact-form .navbar {
+    background: black;
+    position: fixed;
+    padding-bottom: 1rem;
+    top: -13rem;
+    transition: all 0.5s ease-in-out; }
+    .contact-form .navbar ul {
+      padding: 0;
+      list-style: none;
+      text-align: center;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr); }
+    .contact-form .navbar li {
+      padding: 1rem; }
+  .contact-form .navbar.active {
+    top: 0; }
+  .contact-form .navbar-toggle {
+    display: initial; } }
 
 /*# sourceMappingURL=main.css.map */
