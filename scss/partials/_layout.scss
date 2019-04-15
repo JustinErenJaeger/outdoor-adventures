@@ -82,12 +82,12 @@
 // THIS IS THE STYLES FOR THE GALLERY
 
 .gallery {
-    padding: 8rem 2rem 2rem 2rem;
+    padding: 2rem 0 1rem 0;
     display: grid;
-    grid-gap: 1rem;
+    grid-gap: 0.1rem;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(7, 11rem);
-    background: rgb(0, 0, 0);
+    padding-top: 6rem;
 }
 
 .item img {
@@ -96,13 +96,11 @@
 }
 
 .item {
-    box-shadow: 0 0 5px rgb(255, 255, 255);
-    transition: box-shadow 1s ease-in-out, opacity 1s ease-out;
+    transition: opacity 1s ease-out;
     opacity: 0.8;
 
     &.item:hover {
-        box-shadow: 0 0 30px rgb(255, 255, 255);
-        transition: box-shadow 0.2s ease-in-out, opacity 0.5s ease-out;
+        transition: opacity 0.5s ease-out;
         opacity: 1;
     }
 }

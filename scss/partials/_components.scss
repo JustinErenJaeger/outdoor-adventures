@@ -11,7 +11,7 @@
     border-right: 1px solid rgb(255, 255, 255);
     position: fixed;
     margin-left: -3rem;
-    z-index: 2;
+    z-index: 1000;
 }
 
 .navbar ul {
@@ -107,14 +107,15 @@
 }
 
 .navbar-toggle {
-    position: absolute;
+    position: fixed;
+    display: none;
     top: 1rem;
     right: 1rem;
-    z-index: 1000;
+    z-index: 5000;
 
     i {
         color: rgb(253, 253, 253);
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
 }
 
@@ -135,8 +136,6 @@
         100%{margin-top: 4rem;}
     }
 }
-
-
 
 // ACTIVITIES AND THERE BACKGROUNDS
 
@@ -349,8 +348,6 @@
     opacity: 1;
     transition: opacity 0.5s ease-out;
 }
-
-
 
 // STYLES FOR THE READMORE BUTTONS
 
